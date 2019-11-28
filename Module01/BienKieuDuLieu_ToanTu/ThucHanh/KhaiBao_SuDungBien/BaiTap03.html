@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    var a = prompt("Nhập vào số a:   ")*1;
+    while (true) {
+
+        var b = prompt("Nhập vào số b:  ");
+        if(b.trim()===""){
+            alert("b must not is empty !!!");
+            continue;
+        }
+        if (b*1 === 0)
+        {
+            alert("không thể chia cho số 0");
+            continue;
+        }
+        break;
+    }
+    if (a % b === 0)
+    {
+        alert("a chia hết cho b");
+    }
+    else
+        {
+        alert("a không chia hết cho b");
+        }
+</script>
+</body>
+</html>
