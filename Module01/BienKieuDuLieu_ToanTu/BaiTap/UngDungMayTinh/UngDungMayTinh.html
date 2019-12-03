@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongLay</title>
+</head>
+<body>
+<input id="result" placeholder="Kết quả"><br/><br/>
+<input type="button" value="AC" onclick="deletefull(this.value)">
+<input type="button" value="CE" onclick="delCe(this.value)">
+<input type="button" value="+" onclick="addNumber(this.value, '+')"><br><br>
+<input type="button" value="1" onclick="addNumber(this.value)">
+<input type="button" value="2" onclick="addNumber(this.value)">
+<input type="button" value="3" onclick="addNumber(this.value)">
+<input type="button" value="-" onclick="addNumber(this.value,'-')"><br><br>
+<input type="button" value="4" onclick="addNumber(this.value)">
+<input type="button" value="5" onclick="addNumber(this.value)">
+<input type="button" value="6" onclick="addNumber(this.value)">
+<input type="button" value="*" onclick="addNumber(this.value,'*')"><br><br>
+<input type="button" value="7" onclick="addNumber(this.value)">
+<input type="button" value="8" onclick="addNumber(this.value)">
+<input type="button" value="9" onclick="addNumber(this.value)">
+<input type="button" value="/" onclick="addNumber(this.value,'/')"><br><br>
+<input type="button" value="%" onclick="addNumber(this.value)">
+<input type="button" value="." onclick="addNumber(this.value)">
+<input type="button" value="0" onclick="addNumber(this.value)">
+<input type="button" value="=" onclick="result(this.value)">
+<script>
+    var x = "";
+    var state = "";
+    function ketQua(id) {
+        return document.getElementById(id)
+    }
+
+    function addNumber(number, type) {
+        if (!type) {
+            state = "";
+        }
+        if (!state) {
+            state = type;
+            x += number;
+            ketQua("result").value = x;
+        }
+debugger;
+    }
+
+    function deletefull() {
+        x = "";
+        state = "";
+        ketQua("result").value = x;
+    }
+
+    function delCe() {
+        x = ketQua("result").value;
+        ketQua("result").value = x.substr(0, x.length - 1);
+    }
+
+    function result() {
+        ketQua("result").value = eval(ketQua("result").value);
+        x = ketQua("result").value;
+    }
+</script>
+</body>
+</html>

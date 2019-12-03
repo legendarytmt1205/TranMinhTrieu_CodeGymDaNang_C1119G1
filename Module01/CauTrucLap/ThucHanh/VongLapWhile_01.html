@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While_Loops</title>
+</head>
+<body>
+<script>
+    var number = parseInt(prompt("Enter number! or Enter '-1' to quit!"));
+    var total = 0;
+   while (number!== -1){
+        total += number;
+        document.write(number + "</br>");
+        number = parseInt(prompt("Enter number! or Enter '-1' to quit!"));
+   }
+    document.write(  "</br>"
+                    + "</br>"
+                    + "Tổng các số nhập vào là: " + total );
+</script>
+</body>
+</html>

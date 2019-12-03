@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+    </style>
 </head>
 <body>
-<form >
-    Amount: <input type="number" name="" />
-    From Currency: <select name="" id=""></select>
-</form>
-</select>
+    Amount <input id ="amount" type="text" placeholder="Nhập số tiền!">
+    From Currency
+    <select id = "fromNational">
+        <option value="Dong">VN</option>
+        <option value="Dolar">USD</option>
+    </select>
+    To Currency
+    <select id = "toNational">
+        <option value="Dong">VN</option>
+        <option value="Dolar">USD</option>
+    </select>
+    <button onclick = "convert()">Convert</button><br>
+    <script>
+       var amount = document.getElementById("amount");
+       var fromNational = document.getElementById("fromNational");
+       var toNational = document.getElementById("toNational");
+       var result;
+       function convert() {
+           if(fromNational.value==="Dong"&&toNational.value==="Dolar"){
+               result = amount.value/23000;
+           }
+           else if(fromNational.value==="Dolar"&&toNational.value==="Dong"){
+               result = amount.value*2300;
+           }
+           else {
+               result = "Không chọn trùng số tiền quy đổi";
+           }
+           alert(result)
+       }
+    </script>
 </body>
 </html>

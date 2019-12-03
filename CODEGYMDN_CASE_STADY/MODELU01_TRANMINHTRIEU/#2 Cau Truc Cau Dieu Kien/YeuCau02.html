@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeucau02</title>
+
+</head>
+<body>
+<script>
+    var information = prompt("Please! Do you want to choose type service?\n"
+        + "1. Show Information Customer\n"
+        + "2. Edit Information Customer\n"
+        + "3. Show The Amount\n");
+    var name = "Trần Minh Triều";
+    var identityCard = "212442847";
+    var birthday = "12/05/1991";
+    var email = "tranminhtrieudn@gmail.com";
+    var address = "Đà Nẵng";
+    var typeCustomer = "Diamond";
+    var discount = "20";
+    var numberOfPeople = "5";
+    var rentDays = "10";
+    var typeService = "1";
+    var typeRoom = "Vip";
+    var price = 0;
+    var totalPay = 0;
+
+    if (typeService === "1") {
+        price = 500;
+    }
+    else if (typeService === "2") {
+        price = 300;
+    }
+    else {
+        price = 100;
+    }
+    totalPay = price * rentDays *(1- discount / 100);
+
+    //Change totalPay by address
+    if(address==="Đà Nẵng"){
+        totalPay -= 20;
+    }
+    else if(address==="Huế"){
+        totalPay -= 10;
+    }
+    else if(address ==="Quảng Nam"){
+        totalPay -= 5;
+    }
+    else{
+        totalPay*=1;
+    }
+    //Change totalPay by rentdays
+    if (rentDays > 7)
+        totalPay -= 30;
+    else if (rentDays >= 5)
+        totalPay -= 20;
+    else if(rentDays>=2 &&rentDays<=4)
+        totalPay -= 10;
+    else{
+        totalPay*=1;
+    }
+    //Change totalPay by rentdays
+    if(typeCustomer === "Diamond"){
+        totalPay -=15;
+    }
+    else if(typeCustomer ==="Platium"){
+        totalPay -=10;
+    }
+    else if(typeCustomer ==="Gold "){
+        totalPay -=5;
+    }
+    else if(typeCustomer ==="Silver"){
+        totalPay -=2;
+    }
+    else{
+        totalPay*=1;
+    }
+    //Chang total by Age
+    let currentYear = new Date().getFullYear();
+    let birthdayCustomer = new Date(birthday).getFullYear();
+    let ageCustomer = currentYear - birthdayCustomer;
+    if (ageCustomer > 30 && address === "Đà Nẵng")
+        totalPay -= 2;
+    else if (ageCustomer > 20 && address === "Đà Nẵng")
+        totalPay -= 1;
+    else{
+        totalPay*=1;
+    }
+    switch (information) {
+        case "1":
+            alert("Name :  " + name
+                + "\nIdentityCard :  " + identityCard
+                + "\nBirthday :  " + birthday
+                + "\nEmail : " + email
+                + "\nAddress :  " + address
+                + "\nTypeCustomer :  " + typeCustomer
+                + "\nDiscount :  " + discount
+                + "\nNumberOfPeople :  " + numberOfPeople
+                + "\nRentDays :  " + rentDays
+                + "\nTypeService :  " + typeService
+                + "\nTypeRoom :  " + typeRoom
+                + "\nTotalPay :  " + totalPay
+            );
+            break;
+        case "2":
+            var editInformation = prompt("Please! Do you want to choose edit?\n"
+                + "1. Name :  " + name
+                + "\n2. IdentityCard :  " + identityCard
+                + "\n3. Birthday :  " + birthday
+                + "\n4. Email : " + email
+                + "\n5. Address :  " + address
+                + "\n6. TypeCustomer :  " + typeCustomer
+                + "\n7. Discount :  " + discount
+                + "\n8. NumberOfPeople :  " + numberOfPeople
+                + "\n9. RentDays :  " + rentDays
+                + "\n10. TypeService :  " + typeService
+                + "\n11. TypeRoom :  " + typeRoom);
+            switch (editInformation) {
+                case "1":
+                    editName = prompt("Enter name you want edit!");
+                    name = editName;
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + price
+                    );
+                    break;
+                case "2":
+                    editIdentityCard = prompt("Enter identityCard you want edit!");
+                    identityCard = editIdentityCard;
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + price
+                    );
+                    break;
+                case "3":
+                    editBirthday = prompt("Enter birthday you want edit!");
+                    birthday = editBirthday;
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + price
+                    );
+                    break;
+                case "4":
+                    editEmail = prompt("Enter email you want edit!");
+                    email = editEmail;
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + price
+                    );
+                    break;
+                case "5":
+                    editAddress = prompt("Enter address you want edit!");
+                    address = editAddress;
+                    if(address==="Đà Nẵng"){
+                        totalPay -= 20;
+                    }
+                    else if(address==="Huế"){
+                        totalPay -= 10;
+                    }
+                    else if(address ==="Quảng Nam"){
+                        totalPay -= 5;
+                    }
+                    else{
+                        totalPay*=1;
+                    }
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + totalPay
+                    );
+                    break;
+                case "6":
+                    editTypeCustomer = prompt("Enter typeCustomer you want edit!");
+                    typeCustomer = editTypeCustomer;
+                    if(typeCustomer === "Diamond"){
+                        totalPay -=15;
+                    }
+                    else if(typeCustomer ==="Platium"){
+                        totalPay -=10;
+                    }
+                    else if(typeCustomer ==="Gold "){
+                        totalPay -=5;
+                    }
+                    else if(typeCustomer ==="Silver"){
+                        totalPay -=2;
+                    }
+                    else{
+                        totalPay*=1;
+                    }
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + totalPay
+                    );
+                    break;
+                case "7":
+                    editDiscount = prompt("Enter discount you want edit!");
+                    discount = editDiscount;
+                    totalPay = price * rentDays *(1- discount / 100);
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + totalPay
+                    );
+                    break;
+                case "8":
+                    editNumberOfPeople = prompt("Enter numberOfPeople you want edit!");
+                    numberOfPeople = editNumberOfPeople;
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + totalPay
+                    );
+                    break;
+                case "9":
+                    editRentDays = prompt("Enter rentDays you want edit!");
+                    rentDays = editRentDays;
+                    totalPay = price * rentDays *(1- discount / 100);
+                    if (rentDays > 7)
+                        totalPay -= 30;
+                    else if (rentDays >= 5)
+                        totalPay -= 20;
+                    else if(rentDays>=2 &&rentDays<=4)
+                        totalPay -= 10;
+                    else{
+                        totalPay*=1;
+                    }
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + totalPay
+                    );
+                    break;
+                case "10":
+                    editTypeService = prompt("Please! Do you want to choose type service?\n" + "1. Villa\n" + "2. House\n" + "3. Room\n");
+                    typeService = editTypeService;
+                    if (typeService === "1") {
+                        price = 500;
+                    }
+                    else if (typeService === "2") {
+                        price = 300;
+                    }
+                    else {
+                        price = 100;
+                    }
+                    totalPay = price * rentDays *(1- discount / 100);
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + price
+                    );
+                    break;
+                case "11":
+                    editTypeRoom = prompt("Enter typeRoom you want edit!");
+                    typeRoom = editTypeRoom;
+                    alert("Name :  " + name
+                        + "\nIdentityCard :  " + identityCard
+                        + "\nBirthday :  " + birthday
+                        + "\nEmail : " + email
+                        + "\nAddress :  " + address
+                        + "\nTypeCustomer :  " + typeCustomer
+                        + "\nDiscount :  " + discount
+                        + "\nNumberOfPeople :  " + numberOfPeople
+                        + "\nRentDays :  " + rentDays
+                        + "\nTypeService :  " + typeService
+                        + "\nTypeRoom :  " + typeRoom
+                        + "\nTotalPay :  " + price
+                    );
+                    break;
+                default:
+                    alert("Failed");
+            }
+            break;
+        case "3":
+            alert("tính tiền");
+        default:
+            alert("go home")
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChiSoCanNangChieuCao</title>
+</head>
+<body>
+Weight <input id="weight" type="text" placeholder="Nhập vào cân nặng(kg)">
+Height <input id="height" type="text" placeholder="Nhập vào chiều cao(m)">
+<button onclick="kiemTra()">Test</button>
+<script>
+    function kiemTra() {
+        var w = document.getElementById("weight");
+        var h = document.getElementById("height");
+        var bmi = w.value / (h.value * h.value);
+        if (bmi < 18)
+            alert("Underweight");
+        else if (bmi < 25.0)
+            alert("Normal");
+        else if (bmi < 30.0)
+            alert("Overweight");
+        else
+            alert("Obese");
+    }
+</script>
+</body>
+</html>
