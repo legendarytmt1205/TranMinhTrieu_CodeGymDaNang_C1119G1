@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //In dãy fibonacci
+    var n = parseInt(prompt("nhập vào n số fibonacci! "));
+    var first = 0;
+    var second = 1;
+    var result = 0;
+    document.write(0 + "</br>"+1 +"</br>");
+    for (var i = 3; i <= n; i++) {
+        result = first+ second;
+        document.write(result +"</br>");
+        first= second;
+        second= result;
+    }
+</script>
+</body>
+</html>

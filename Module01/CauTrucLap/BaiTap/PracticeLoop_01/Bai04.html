@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Hiển thị số đầu tiên trong dãy fibonacci mà chia hết cho 5
+    var first = 0;
+    var second = 1;
+    var result = 0;
+    for (var i = 2; ; i++) {
+        result = first + second;
+        if (result % 5 === 0) {
+            alert("Số " + result + " là số fibonacci đầu tiên mà chia hết cho 5");
+            break;
+        }
+        first = second;
+        second = result;
+    }
+</script>
+</body>
+</html>

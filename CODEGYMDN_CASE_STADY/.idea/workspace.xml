@@ -2,20 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43d3b775-1314-45e1-ac56-9d39c0ba7926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/testOption.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/BienKieuDuLieu_ToanTu/BaiTap/UngDungChuyenDoiTienTe/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/BienKieuDuLieu_ToanTu/BaiTap/UngDungMayTinh/UngDungMayTinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucDieuKien/CauTruc_If_Else.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucDieuKien/CauTruc_If_ElseIf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucDieuKien/KiemTraNam Nhuan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucDieuKien/LuyenTapToanTu01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucDieuKien/LuyenTapToanTu02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucDieuKien/LuyenTap_switch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/BangCuuChuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/Bai08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_01/SoNguyenToToiUu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_02/Bai01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_02/Bai02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/PracticeLoop_02/Bai03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/BaiTap/SoNguyenTo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/Mang/BaiTap/PracticeWithArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/Mang/ThucHanh/CreateCaroSimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/Mang/ThucHanh/FIndValueMaxInArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/Mang/ThucHanh/FindValueInArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/Mang/ThucHanh/PracticeWithArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module01/Mang/ThucHanh/ReverseArray.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html" beforeDir="false" afterPath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html" beforeDir="false" afterPath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/testOption.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Module01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module01/BienKieuDuLieu_ToanTu/BaiTap/UngDungChuyenDoiTienTe/ChangeMoney.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module01/BienKieuDuLieu_ToanTu/BaiTap/UngDungChuyenDoiTienTe/ChangeMoney.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module01/CauTrucLap/ThucHanh/VongLapLongNhau.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module01/CauTrucLap/ThucHanh/VongLapLongNhau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module01/CauTrucLap/ThucHanh/test.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,17 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="192">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/testOption.html">
+        <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="144">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -49,8 +64,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="290" column="54" lean-forward="true" selection-start-line="290" selection-start-column="54" selection-end-line="290" selection-end-column="54" />
+            <state relative-caret-position="-1538">
+              <caret line="86" column="48" lean-forward="true" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+              <folding>
+                <element signature="e#733#761#0" />
+                <element signature="e#796#824#0" />
+                <element signature="e#978#1009#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -70,14 +99,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html" />
         <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/test.html" />
         <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/testOption.html" />
+        <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html" />
+        <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/test.html" />
+        <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html" />
         <option value="$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="460" />
     <option name="y" value="160" />
     <option name="width" value="820" />
@@ -97,6 +128,23 @@
               <item name="CODEGYMDN_CASE_STADY" type="b2602c69:ProjectViewProjectNode" />
               <item name="CODEGYMDN_CASE_STADY" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CODEGYMDN_CASE_STADY" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CODEGYMDN_CASE_STADY" type="462c0819:PsiDirectoryNode" />
+              <item name="MODELU01_TRANMINHTRIEU" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CODEGYMDN_CASE_STADY" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CODEGYMDN_CASE_STADY" type="462c0819:PsiDirectoryNode" />
+              <item name="MODELU01_TRANMINHTRIEU" type="462c0819:PsiDirectoryNode" />
+              <item name="#1 Bien Kieu Du Lieu Va Toan Tu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CODEGYMDN_CASE_STADY" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CODEGYMDN_CASE_STADY" type="462c0819:PsiDirectoryNode" />
+              <item name="MODELU01_TRANMINHTRIEU" type="462c0819:PsiDirectoryNode" />
+              <item name="#2 Cau Truc Cau Dieu Kien" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -107,7 +155,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Module01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -145,14 +193,22 @@
       <workItem from="1575252365425" duration="41000" />
       <workItem from="1575252421471" duration="11180000" />
       <workItem from="1575267642434" duration="83000" />
+      <workItem from="1575356135906" duration="2203000" />
+      <workItem from="1575359707689" duration="196000" />
+      <workItem from="1575364851087" duration="258000" />
+      <workItem from="1575365328938" duration="78000" />
+      <workItem from="1575365627801" duration="160000" />
+      <workItem from="1575510258857" duration="233000" />
+      <workItem from="1575527519530" duration="562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19803000" />
+    <option name="totallyTimeSpent" value="23493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13681428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -178,24 +234,37 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/test.html" />
-    <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html">
+    <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/testOption.html" />
+    <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="144">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/testOption.html">
+    <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="168">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="290" column="54" lean-forward="true" selection-start-line="290" selection-start-column="54" selection-end-line="290" selection-end-column="54" />
+        <state relative-caret-position="-1538">
+          <caret line="86" column="48" lean-forward="true" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+          <folding>
+            <element signature="e#733#761#0" />
+            <element signature="e#796#824#0" />
+            <element signature="e#978#1009#0" />
+          </folding>
         </state>
       </provider>
     </entry>

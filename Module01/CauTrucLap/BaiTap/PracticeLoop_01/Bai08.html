@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="display()" id="btn" style="font-size: larger ">Start</button>
+<script>
+
+    function display() {
+        var inputFirst = parseInt(prompt("from"));
+        var inputSecond = parseInt(prompt("to"));
+        var lucky = randomInteger(inputFirst, inputSecond);
+        var count = 0;
+        do {
+            var input = parseInt(prompt("Enter number"));
+            if (input === lucky) {
+                alert("Win");
+                break;
+            } else {
+                alert("YOU ARE LOSER");
+                count++;
+            }
+        } while (count < 4);
+        if (count === 4) {
+            alert("End game!")
+        }
+    }
+
+    function randomInteger(a, b) {
+        return Math.floor(Math.random() * (b - a + 1)) + a;
+    }
+</script>
+</body>
+</html>

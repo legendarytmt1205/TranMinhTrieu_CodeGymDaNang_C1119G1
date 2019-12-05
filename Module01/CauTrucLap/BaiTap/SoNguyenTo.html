@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoNguyenTo</title>
+</head>
+<body>
+<script>
+    var n = prompt("Nhập vào n số nguyên tố đầu tiên!") * 1;
+    hienThiDanhSachSoDauTien(n);
+    //hienThiDanhSach(n);
+
+    //Hiển thị danh sách n số nguyên tố
+    function hienThiDanhSachSoDauTien(num) {
+        for (var i = 3, count = 1; count <= n; i+=2) {
+            var flag = true;
+            for (var j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j === 0) {
+                    flag = false;
+                }
+            }
+            if (flag === true) {
+                document.write(i + " là số nguyên tố <br/></br>");
+                count++;
+            }
+        }
+    }
+    //Hiển thị danh sách số nguyên tố bé hơn n
+        function hienThiDanhSach(value) {
+            for (var i = 1; i <= value; i++) {
+                var flag = true;
+                if (i < 2) {
+                    flag = false;
+                } else {
+                    for (var j = 2; j <= i - 1; j++) {
+                        if (i % j === 0) {
+                            flag = false;
+                        }
+                    }
+                }
+                if (flag === true) {
+                    document.write(i + " là số nguyên tố <br/></br>");
+                } else {
+                    //document.write(i + " không phải là số nguyên tố <br/><br/>");
+                }
+            }
+    }
+
+</script>
+</body>
+</html>

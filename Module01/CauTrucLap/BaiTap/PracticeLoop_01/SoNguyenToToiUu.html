@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var result = "";
+    var n = parseInt(prompt("Nhập vào n"));
+    hienThi(n);
+
+    function checkSNT(num) {
+        for (var i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function hienThi(n) {
+        for (var i = 3; i <= n; i+=2) {
+            if (checkSNT(i)) {
+                result += i + "<br/>";
+            }
+        }
+        document.writeln(2 + "<br/>" + result);
+    }
+</script>
+</body>
+</html>
