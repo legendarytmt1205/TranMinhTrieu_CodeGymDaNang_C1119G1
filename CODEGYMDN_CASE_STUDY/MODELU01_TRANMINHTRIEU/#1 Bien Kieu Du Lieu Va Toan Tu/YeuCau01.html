@@ -8,14 +8,6 @@
 <script>
     var name = prompt("Enter name customer :   ");
     var identityCard = prompt("Enter Identity Card customer :   ");
-
-
-    do {
-        var identityCard = parseInt(prompt("Enter Identity Card customer :   "));
-    }while (!(Number.isInteger(identityCard)&&identityCard.toString().length === 8));
-    alert("identityCard");
-
-
     var birthday = prompt("Enter birthday customer :   ");
     var email = prompt("Enter email customer :   ");
     var address = prompt("Enter address customer :   ");
@@ -23,20 +15,22 @@
     var discount = prompt("Enter discount customer :   ") * 1;
     var numberOfPeople = prompt("Enter numberOfPeople :   ");
     var rentDays = prompt("Enter rentDays customer :   ") * 1;
-    var typeService = prompt("Please! Do you want to choose type service?\n" + "1. Villa\n" + "2. House\n" + "3. Room\n");
+    var typeService = prompt("Please! Do you want to choose type service?\n"
+        + "1. Villa\n"
+        + "2. House\n"
+        + "3. Room\n");
     var typeRoom = prompt("Enter typeRoom:  ");
     var price;
     if (typeService === "1") {
         price = 500;
-    }
-    else if (typeService === "2") {
+    } else if (typeService === "2") {
         price = 300;
-    }
-    else {
+    } else {
         price = 100;
     }
 
-    var totalPay = price * rentDays *(1- discount / 100);
+    var totalPay = price * rentDays * (1 - discount / 100);
+
     alert("Name :  " + name
         + "\nIdentityCard :  " + identityCard
         + "\nBirthday :  " + birthday

@@ -53,7 +53,7 @@
     else {
         totalPay *= 1;
     }
-    //Change totalPay by rentdays
+    //Change totalPay by typeCustomer
     if (typeCustomer === "Diamond") {
         totalPay -= 15;
     } else if (typeCustomer === "Platium") {
@@ -76,6 +76,7 @@
     else {
         totalPay *= 1;
     }
+
     switch (information) {
         case "1":
             showInformation();
@@ -203,8 +204,6 @@
             + "\nTotalPay :  " + price
         );
     }
-
-
 </script>
 </body>
 </html>

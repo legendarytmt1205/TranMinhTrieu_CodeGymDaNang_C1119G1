@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformation</title>
+</head>
+<body>
+<input id = "eng" placeholder="Enter word" type="text">
+<button onclick = "translate()" >Transformation</button>
+<input id = "viet" placeholder="Enter word" type="text">
+<script>
+    var english = ["hello","thank","goodbye","goodnight","sorry"];
+    var vietNam = ["xin chào","cảm ơn ","tạm biệt","chúc ngủ ngon","xin lỗi"];
+    function translate() {
+        var englishInput = document.getElementById("eng").toString();
+        for (var i = 0; i < english.length;i++) {
+            if (englishInput == english[i]) {
+                alert(vietNam[i]);
+            } else {
+                alert("Hiện tại từ điển chưa có từ này!");
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

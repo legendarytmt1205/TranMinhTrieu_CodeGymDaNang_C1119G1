@@ -12,21 +12,40 @@
     // document.write(myColor);
 
     //Bài 02
-
-    var num = prompt();
-    var result = [num[0]];
-    document.write(result);
-
+    // var num = prompt();
+    // var str = num.toString();
+    // var array = [str[0]];
+    //
     // for (let x = 1; x < str.length; x++) {
     //     if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
-    //         result.push('-', str[x]);
+    //         array.push('-', str[x]);
     //     } else {
-    //         result.push(str[x]);
+    //         array.push(str[x]);
     //     }
     // }
-    // console.log(result.join(''));
+    // for (var item in array) {
+    //     document.write(array[item]);
+    // }
+    // for (var i = 0; i < array.length; i++) {
+    //     document.write(array[i]);
+    // }
 
-
+    //bài 03
+    var str = prompt("Nhập vào chuỗi bất kỳ");
+    var lower = str.toLocaleLowerCase();
+    var result = [];
+    for (var i=0; i <str.length; i++) {
+        if (lower.includes(str[i])) {
+            result.push(str[i].toUpperCase());
+        }
+        else {
+            result.push(str[i].toLowerCase());
+        }
+    }
+    for (var item in result) {
+        document.write(result[item])
+    }
+    //document.write(result.join());
 </script>
 
 </body>
