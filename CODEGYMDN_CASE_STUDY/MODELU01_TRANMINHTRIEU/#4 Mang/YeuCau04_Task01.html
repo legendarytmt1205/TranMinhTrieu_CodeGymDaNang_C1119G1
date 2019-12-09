@@ -12,21 +12,27 @@
     switch (information) {
         case"1":
             var arrNameCustomers = [];
+            result = "";
             var numberOfCustomer = parseInt(prompt("Please! Enter the number of customer  you want to add!?"));
             for (var i = 0; i < numberOfCustomer; i++) {
-                var num = i+1;
-                var nameCustomer = prompt("Please! Enter customer name number :  " + num );
+                var nameCustomer =  prompt("Please! Enter customer name number :  " +(i+1));
                 arrNameCustomers.push(nameCustomer);
             }
-            // for (var i = 0; i<numberOfCustomer;i++) {
-            //     var num = i+1;
-            //     //document.writeln(num+"." + arrNameCustomers[i] + "</br>");
-            //     alert(num+"." + arrNameCustomers[i]);
-            // }
-            alert(arrNameCustomers.sort());
+            for (var i = 0; i < numberOfCustomer; i++) {
+                result += i + 1 + ". " + arrNameCustomers[i] + "\n";
+            }
+            alert(result);
+
+            //Display customer name by alphabel
+            arrNameCustomers.sort();
+            for (var i = 0; i < arrNameCustomers.length; i++) {
+                result += i + 1 + ". " + arrNameCustomers[i] + "\n";
+            }
+            alert(result);
+            
             break;
         case"2":
-            alert("aaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            alert("");
             break;
     }
 </script>
