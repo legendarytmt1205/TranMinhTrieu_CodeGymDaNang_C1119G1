@@ -6,11 +6,16 @@
 </head>
 <body>
 <script>
-var str = "11/12/aaaa";
-var item;
-item = str.split("/").join("");
-
-    alert(item);
+    var text = "";
+    var i;
+    for (i = 0; i < 5; i++) {
+        if (i === 3) {
+            text += i;
+            continue;
+        }
+        text += "the number is " + i + "</br>";
+    }
+    document.write(text);
 </script>
 </body>
 </html>

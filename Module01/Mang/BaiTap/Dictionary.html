@@ -6,23 +6,38 @@
 </head>
 <body>
 <input id="eng" placeholder="Enter word" type="text">
-<button onclick="translate()">Transformation</button>
-<input id="viet" placeholder="Enter word" type="text">
+<button onclick="translateWords()">Transformation</button>
+<input disabled id="viet" placeholder="Enter word" type="text">
 <script>
     var english = ["hello", "thank", "goodbye", "goodnight", "sorry"];
     var vietNam = ["xin chào", "cảm ơn ", "tạm biệt", "chúc ngủ ngon", "xin lỗi"];
 
-    function translate() {
-        var englishInput = document.getElementById("eng").toString();
+    //#region translate
+    function translateWords() {
+        var englishInput = document.getElementById("eng");
+        englishInput = englishInput.value.toLocaleLowerCase();
+        var vietInput = document.getElementById("viet");
+        vietInput.value.toLocaleLowerCase();
+        if (!english.join().includes(englishInput)) {
+            alert("The dictionary currently doesn't have this word!");
+        }
         for (var i = 0; i < english.length; i++) {
             if (englishInput === english[i]) {
-                alert(vietNam[i]);
-            } else {
-                alert("Hiện tại từ điển chưa có từ này!");
-                break;
+                document.getElementById("viet").value = vietNam[i];
             }
         }
+
+        // if (!vietInput.join().includes(englishInput)) {
+        //     alert("The dictionary currently doesn't have this word!");
+        // }
+        // for (var i = 0; i < vietNam.length; i++) {
+        //     if (vietInput === vietNam[i]) {
+        //         document.getElementById("eng").value = english[i];
+        //     }
+        // }
     }
+
+    //#endregion
 </script>
 </body>
 </html>

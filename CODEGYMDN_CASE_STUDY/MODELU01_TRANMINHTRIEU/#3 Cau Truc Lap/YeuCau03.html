@@ -6,104 +6,127 @@
 </head>
 <body>
 <script>
-    // var name = prompt("Enter name customer :   ");
-    //
-    // var identityCard = parseInt(prompt("Enter Identity Card customer(8 ký tự số) :   "));
-    // while (!(Number.isInteger(identityCard) && identityCard.toString().length === 8)) {
-    //     identityCard = parseInt(prompt("Dữ liệu không hợp lệ(Nhập đủ 8 ký tụ số):   "));
-    // }
-    //
-    // var birthday;
-    // do {
-    //     birthday = prompt("Enter birthday customer(DD/MM/YYYY)");
-    // } while (!checkBirthday(birthday));
-    //
+    var name = prompt("Enter name customer :   ");
+    autoEditName(name);
+    var identityCard = parseInt(prompt("Enter Identity Card customer(8 ký tự số) :   "));
+    while (!(Number.isInteger(identityCard) && identityCard.toString().length === 8)) {
+        identityCard = parseInt(prompt("Dữ liệu không hợp lệ(Nhập đủ 8 ký tụ số):   "));
+    }
+
+    var birthday;
+    do {
+        birthday = prompt("Enter birthday customer(DD/MM/YYYY)");
+    } while (!checkBirthday(birthday));
+
     var email = prompt("Enter email customer :   ");
 
     do {
-        birthday = prompt("Enter email ()  )");
-    } while (!validateEmail(email));
+        email = prompt("Định dạng email không hợp lệ ! (abc@abc.abc)  ");
+    } while (!checkEmail(email));
 
 
-    // var address = prompt("Enter address customer :   ");
-    //
-    // var typeCustomer = prompt("Enter typeCustomer customer :   ");
-    //
-    // var discount = parseInt(prompt("Enter discount customer :   "));
-    // while (!(Number.isInteger(discount)) || discount > 100) {
-    //     discount = parseInt(prompt("Dữ liệu không hợp lệ!(Discount phải là số nguyên dương):  "));
-    // }
-    //
-    // var numberOfPeople = parseInt(prompt("Enter numberOfPeople :   "));
-    // while (!(Number.isInteger(numberOfPeople))) {
-    //     numberOfPeople = parseInt(prompt("Dữ liệu không hợp lệ!(Discount phải là số nguyên dương):  "));
-    // }
-    // var rentDays = prompt("Enter rentDays customer :   ") * 1;
-    // while (!(Number.isInteger(rentDays))) {
-    //     rentDays = parseInt(prompt("Dữ liệu không hợp lệ!(RentDays phải là số nguyên dương):  "));
-    // }
-    //
-    // var typeService = prompt("Please! Do you want to choose type service?\n" + "1. Villa\n" + "2. House\n" + "3. Room\n");
-    // var typeRoom = prompt("Enter typeRoom:  ");
-    // var price;
-    // if (typeService === "1") {
-    //     price = 500;
-    // } else if (typeService === "2") {
-    //     price = 300;
-    // } else {
-    //     price = 100;
-    // }
-    //
-    // var totalPay = price * rentDays * (1 - discount / 100);
-    //
-    // alert("Name :  " + name
-    //     + "\nIdentityCard :  " + identityCard
-    //     + "\nBirthday :  " + birthday
-    //     + "\nEmail : " + email
-    //     + "\nAddress :  " + address
-    //     + "\nTypeCustomer :  " + typeCustomer
-    //     + "\nDiscount :  " + discount
-    //     + "\nNumberOfPeople :  " + numberOfPeople
-    //     + "\nRentDays :  " + rentDays
-    //     + "\nTypeService :  " + price
-    //     + "\nTypeRoom :  " + typeRoom
-    //     + "\nTotalPay :  " + totalPay
-    // );
-    //
-    // function checkBirthday(birthday) {
-    //     var date = parseInt((birthday[0] + birthday[1]));
-    //     var month = parseInt((birthday[3] + birthday[4]));
-    //
-    //     if (birthday[2] !== "/"
-    //         || birthday[5] !== "/"
-    //         || birthday.length !== 10) {
-    //         return false;
-    //     }
-    //     if (isNaN(birthday.split("/").join(""))) {
-    //         return false;
-    //     }
-    //     if (birthday[0] === "0" && birthday[1] === "0") {
-    //         return false;
-    //     }
-    //     if (month > 12 || month < 1) {
-    //         return false;
-    //     }
-    //     if (date < 0 || date > 31) {
-    //         return false;
-    //     }
-    //     return true;
-    // }
+    var address = prompt("Enter address customer :   ");
 
-    function checkEmail() {
+    var typeCustomer = prompt("Enter typeCustomer customer :   ");
 
+    var discount = parseInt(prompt("Enter discount customer :   "));
+    while (!(Number.isInteger(discount)) || discount > 100) {
+        discount = parseInt(prompt("Dữ liệu không hợp lệ!(Discount phải là số nguyên dương):  "));
     }
 
-    function validateEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
+    var numberOfPeople = parseInt(prompt("Enter numberOfPeople :   "));
+    while (!(Number.isInteger(numberOfPeople))) {
+        numberOfPeople = parseInt(prompt("Dữ liệu không hợp lệ!(Discount phải là số nguyên dương):  "));
+    }
+    var rentDays = prompt("Enter rentDays customer :   ") * 1;
+    while (!(Number.isInteger(rentDays))) {
+        rentDays = parseInt(prompt("Dữ liệu không hợp lệ!(RentDays phải là số nguyên dương):  "));
     }
 
+    var typeService = prompt("Please! Do you want to choose type service?\n" + "1. Villa\n" + "2. House\n" + "3. Room\n");
+    var typeRoom = prompt("Enter typeRoom:  ");
+    var price;
+    if (typeService === "1") {
+        price = 500;
+    } else if (typeService === "2") {
+        price = 300;
+    } else {
+        price = 100;
+    }
 
+    var totalPay = price * rentDays * (1 - discount / 100);
+
+    alert("Name :  " + name
+        + "\nIdentityCard :  " + identityCard
+        + "\nBirthday :  " + birthday
+        + "\nEmail : " + email
+        + "\nAddress :  " + address
+        + "\nTypeCustomer :  " + typeCustomer
+        + "\nDiscount :  " + discount
+        + "\nNumberOfPeople :  " + numberOfPeople
+        + "\nRentDays :  " + rentDays
+        + "\nTypeService :  " + price
+        + "\nTypeRoom :  " + typeRoom
+        + "\nTotalPay :  " + totalPay
+    );
+
+    function checkBirthday(birthday) {
+        var date = parseInt((birthday[0] + birthday[1]));
+        var month = parseInt((birthday[3] + birthday[4]));
+
+        if (birthday[2] !== "/"
+            || birthday[5] !== "/"
+            || birthday.length !== 10) {
+            return false;
+        }
+        if (isNaN(birthday.split("/").join(""))) {
+            return false;
+        }
+        if (birthday[0] === "0" && birthday[1] === "0") {
+            return false;
+        }
+        if (month > 12 || month < 1) {
+            return false;
+        }
+        if (date < 0 || date > 31) {
+            return false;
+        }
+        return true;
+    }
+
+    function checkEmail(email) {
+        var atIndex = email.indexOf("@");
+        var lenght = email.length;
+        var dotIndex = email.indexOf(".");
+        var spaceIndex = email.indexOf(" ");
+        if ((lenght < 6)
+            || (atIndex < 1)
+            || (atIndex === email.length - 1)
+            || (dotIndex <= (atIndex + 1))
+            || (spaceIndex !== -1)
+            || (dotIndex !== -1)
+            || (atIndex + 1 === dotIndex)
+            || (dotIndex === email.length - 1)
+        ) {
+            return false;
+        }
+        return true;
+    }
+
+    function autoEditName(name) {
+        var str = name;
+        var result = "";
+        str = str.split(" ").filter(x=>x!== "").join(" ").toLowerCase();
+        result += str[0].toUpperCase();
+        for (var i = 1; i < str.length; i++) {
+            if (str[i-1] === " ") {
+                result+= str[i].toUpperCase();
+                continue;
+            }
+           result += str[i];
+        }
+        document.writel(result);
+    }
 </script>
 </body>
 </html>

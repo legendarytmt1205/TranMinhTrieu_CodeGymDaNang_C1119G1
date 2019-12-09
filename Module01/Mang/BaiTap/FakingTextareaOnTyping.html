@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea name="txt" id="area" cols="60" rows="10" onkeydown="inputFromKeybord()"></textarea>
+<script>
+
+    var area = document.getElementById("area").innerText;
+    var text = "Trần Minh Triều"; // hiển thị cố định
+    var result = "";
+
+    function inputFromKeybord() {
+        //event.preventDefault();
+        text += result[text.length];
+        if (text.length === area.length) {
+            result="";
+        }
+    }
+
+</script>
+</body>
+</html>
