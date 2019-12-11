@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Nhap Ky Tu: <br>
+    <input id="EnterTheWord">
+    <input type='button' value='Look Word' onclick='lookWord()'>
+    <p id = "result"></p>
+</form>
+<script>
+    let array= [];
+    let a = prompt("Nhap ky tu thu 1");
+    let b = prompt("Nhap ky tu thu 2");
+    let c = prompt("Nhap ky tu thu 3");
+    let d = prompt("Nhap ky tu thu 4");
+    let e = prompt("Nhap ky tu thu 5");
+    let f = prompt("Nhap ky tu thu 6");
+    let g = prompt("Nhap ky tu thu 7");
+    array[0]=a;
+    array[1]=b;
+    array[2]=c;
+    array[3]=d;
+    array[4]=e;
+    array[5]=f;
+    array[6]=g;
+    function lookWord() {
+        let key = document.getElementById("EnterTheWord");
+        let index = array.indexOf(key.value);
+        let result = document.getElementById("result");
+        let soLan =0;
+        if (index !== -1) {
+            for (let i = 0; i < array.length; i++) {
+                if (key.value == array[i]) {
+                    soLan++;
+                }
+            }
+            result.innerText = key.value+ " " + "Xuat hien so lan la:" + " "+ soLan;
+        }
+        else {
+            result.innerText = -1;
+        }
+    }
+</script>
+</body>
+</html>

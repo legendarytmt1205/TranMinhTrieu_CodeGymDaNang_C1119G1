@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arrListCustomers = [];
+    var nameArray = [];
+    var identityCardArray = [];
+    var birthdayArray = [];
+    var emailArray = [];
+    var addressArray = [];
+    var typeCustomerArray = [];
+    var discountArray = [];
+    var numberOfPeopleArray = [];
+    var rentDaysArray = [];
+    var typeServiceArray = [];
+    var typeRoomArray = [];
+    var checkEdit = false;
+    displayMainMenu();
+
+    function displayMainMenu() {
+        var number = prompt("Please! Do you want to choose type service?\n"
+            + "1. Add New Customer.\n"
+            + "2. Display Information Customer.\n"
+            + "3. Edit Information Customer.\n"
+            + "4. Delete Customer.\n"
+            + "5. Exit.\n");
+        switch (number) {
+            case "1":
+                addNewCustomer();
+                break;
+            case "2":
+                displayCustomers();
+                break;
+            case "3":
+                editInformationCustomer();
+                break;
+            case "4":
+                deleteCustomer();
+                break;
+            case"5":
+                return;
+            default:
+                alert("lê văn lỗi");
+                displayMainMenu();
+        }
+    }
+
+    function addNewCustomer() {
+        nameArray.push(prompt("Enter name customer :   "));
+        identityCardArray.push(prompt("Enter Identity Card customer :   "));
+        birthdayArray.push(prompt("Enter birthday customer :   "));
+        emailArray.push(prompt("Enter email customer :   "));
+        addressArray.push(prompt("Enter address customer :   "));
+        typeCustomerArray.push(prompt("Enter typeCustomer customer :   "));
+        discountArray.push(prompt("Enter discount customer :   "));
+        numberOfPeopleArray.push(prompt("Enter numberOfPeople :   "));
+        rentDaysArray.push(prompt("Enter rentDays customer :   "));
+        typeServiceArray.push(prompt("Please! Do you want to choose type service?\n"
+            + "1. Villa\n"
+            + "2. House\n"
+            + "3. Room\n"));
+        typeRoomArray.push(prompt("Enter typeRoom:  "));
+        displayMainMenu();
+    }
+
+    function displayCustomers() {
+        var choose = prompt("Chọn khách hàng muốn hiển thị \n"
+                            + getNameAndIdentityCard() + "\n"
+                            + (nameArray.length+1) + " .Back to menu");
+        choose--;
+        switch (choose) {
+            case (nameArray.length):
+                checkEdit = false;
+                displayMainMenu();
+                break;
+            default:
+                if(checkEdit){
+                    checkEdit = false;
+                    prompt(displayInformationCustomer(choose));
+                }else {
+                    alert(displayInformationCustomer(choose));
+                }
+        }
+        displayMainMenu();
+    }
+
+    function displayInformationCustomer(index) {
+        return  "1. Name:  " + nameArray[index] + "\n"
+            + "2. ID Card:  " + identityCardArray[index] + "\n"
+            + "3. Birthday:  " + birthdayArray[index] + "\n"
+            + "4. Email:  " + emailArray[index] + "\n"
+            + "5. Address:  " + addressArray[index] + "\n"
+            + "6. Type Customer:  " + typeCustomerArray[index] + "\n"
+            + "7. Discount:  " + discountArray[index] + "\n"
+            + "8. Number Of Accompanying:  " + numberOfPeopleArray[index] + "\n"
+            + "9. Rent Days:  " + rentDaysArray[index] + "\n"
+            + "11. Type Service:  " + typeServiceArray[index] + "\n"
+            + "11. Type Room:  " + typeRoomArray[index]  ;
+    }
+
+    function editInformationCustomer() {
+        checkEdit = true;
+        displayCustomers();
+    }
+
+    function deleteCustomer() {
+
+    }
+
+    function getNameAndIdentityCard() {
+        var result = "";
+        for (var i = 0; i < nameArray.length; i++) {
+            result += i + 1 + ". " + "Name: " + nameArray[i] + " - " + "ID: " + identityCardArray[i]   + "\n";
+        }
+        return result;
+    }
+
+    function getInfoCustomer() {
+
+    }
+
+</script>
+
+</body>
+</html>

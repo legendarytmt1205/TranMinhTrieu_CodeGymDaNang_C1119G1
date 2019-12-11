@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrListCustomer = [];
+    function displayMainMenu() {
+        choose = prompt(
+            "1. Add New Customer\n" +
+            "2. Display Information Customer\n" +
+            "3. Edit Information Customer\n" +
+            "4. Delete Customer\n" +
+            "5. Exit\n");
+        switch (choose) {
+            case "1":
+                addNewCustomer();
+                break;
+            case "2":
+                displayInformationCustomer();
+                break;
+            case "3":
+                editInformationEmployee();
+                break;
+            case "4":
+                deleteInformationCustomer();
+                break;
+            default:
+                alert("fall!!");
+                displayMainMenu();
+        }
+    }
+    displayMainMenu();
+    function addNewCustomer() {
+        let customerInfo = [];
+        let nameCustomer = prompt("0. Enter Name Customer:");
+        let idCard = prompt("1. Enter Id Card Customer:");
+        let birthdayCustomer = prompt("2. Enter Birthday Customer (dd/MM/YYYY):");
+        let emailCustomer = prompt("3. Enter email Customer:");
+        let addressCustomer = prompt("4. Enter Address Customer:");
+        let typeCustomer = prompt("5. Enter Type Customer:");
+        let discount = prompt("6. Enter Discount");
+        let numberOfAccompanying = prompt("7. Enter Number Of Accompanying:");
+        let typeRoom = prompt("8. Enter Type Room:");
+        let rentDays = prompt("9. Enter Rent Days:");
+        let typeService = prompt("10. Enter Type Service:");
+        customerInfo.push(nameCustomer);
+        customerInfo.push(idCard);
+        customerInfo.push(birthdayCustomer);
+        customerInfo.push(emailCustomer);
+        customerInfo.push(addressCustomer);
+        customerInfo.push(typeCustomer);
+        customerInfo.push(discount);
+        customerInfo.push(numberOfAccompanying);
+        customerInfo.push(typeRoom);
+        customerInfo.push(rentDays);
+        customerInfo.push(typeService);
+        arrListCustomer.push(customerInfo);
+        displayMainMenu();
+    }
+    function get2InforCustomer() {
+        let result = "";
+        for (i = 0; i < arrListCustomer.length; i++) {
+            result += "Số thứ tự:" + " " + i + "\n"
+                + "0.Name:" + " " + arrListCustomer[i][0] + "\n"
+                + "1.ID Card" + " " + arrListCustomer[i][1] + "\n"
+                + "============================\n";
+        }
+        return result;
+    }
+    function displayInformationCustomer() {
+        choose = prompt("Chọn khách hàng muốn hiển thị \n" + get2InforCustomer() + arrListCustomers.length + ".Back");
+        switch (choose) {
+            case (arrListCustomers.length) + "":
+                displayMainMenu();
+                break;
+            default:
+                displayCustomer(choose);
+        }
+        displayMainMenu();
+    }
+    function displayCustomer(index) {
+        alert(getInformationCustomer(index));
+    }
+    function getInformationCustomer(index) {
+        return "0. Name: " + " " + arrListCustomer[index][0] + "\n"
+            + "1. ID Card: " + " " + arrListCustomer[index][1] + "\n"
+            + "2. Birthday: " + " " + arrListCustomer[index][2] + "\n"
+            + "3. Email: " + " " + arrListCustomer[index][3] + "\n"
+            + "4. Address: " + " " + arrListCustomer[index][4] + "\n"
+            + "5. Type Customer: " + " " + arrListCustomer[index][5] + "\n"
+            + "6. Discount: " + " " + arrListCustomer[index][6] + "\n"
+            + "7. Number Of Accompanying: " + " " + arrListCustomer[index][7] + "\n"
+            + "8. Type Room: " + " " + arrListCustomer[index][8] + "\n"
+            + "9. Rent Days: " + " " + arrListCustomer[index][9] + "\n"
+            + "10. Type Service: " + " " + arrListCustomer[index][10] + "\n";
+           // + "============== \n";
+    }
+</script>
+</body>
+</html>

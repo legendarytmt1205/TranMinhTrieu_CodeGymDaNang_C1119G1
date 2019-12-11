@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm từ đối xứng</title>
+</head>
+<body>
+<script>
+    var word = prompt("Nhập vào từ cần tra cứu");
+    if (isPalindrome(word) === true) {
+        document.write("Đối xứng");
+    } else {
+        document.write("Không đối xứng");
+    }
+
+    function isPalindrome(word) {
+        for (var i = 0; i < word.length / 2; i++) {
+            if (word[i] === word[word.length - 1 - i]) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

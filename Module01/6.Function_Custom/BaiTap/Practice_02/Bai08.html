@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = prompt("chuỗi số");
+    var array = [];
+    for (var i = 0; i < str.length; i++) {
+        array.push(str[i]);
+    }
+    reverseString(array);
+
+    function reverseString(array) {
+        return document.write(array.reverse());
+    }
+</script>
+</body>

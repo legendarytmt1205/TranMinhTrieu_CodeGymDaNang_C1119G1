@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="m" type="text" placeholder="meter">
+<input id="f" type="text" placeholder="foot"><br>
+<button id="btnMeter" onclick="changeFoot()">Convert Meter To Foot</button>
+<button id="btnfoot" onclick="changeMeter()">Convert Foot To Meter</button>
+
+<script>
+    var m = document.getElementById("m");
+    var f = document.getElementById("f");
+  function changeMeter() {
+     m.value = footToMeter(f.value);
+  }
+    function changeFoot() {
+        f.value = meterToFoot(m.value);
+    }
+    function footToMeter(foot){
+        let meter = 0.305 * foot;
+        return meter;
+    }
+    function meterToFoot(meter) {
+       let foot = 3.279 * meter;
+        return foot;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var r = prompt("Nhập vào bán kính: ");
+    function calculatoracreage(r) {
+        var acreage = Math.PI * r * r;
+        return acreage;
+    }
+
+    function calculatorperimeter(r) {
+        var perimeter = Math.PI * 2 * r;
+        return perimeter;
+    }
+
+    document.write("acreage :  "  + calculatoracreage(r) + "<br>");
+    document.write("perimeter :  "  + calculatorperimeter(r));
+</script>
+</body>
+</html>

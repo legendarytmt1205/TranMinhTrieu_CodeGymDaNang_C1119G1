@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="star" placeholder="Enter star name">
+<input type='button' value='Find constellation' onclick='findStar()'>
+<p id="result"></p>
+<script>
+    var stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe ", "Regulus"];
+    var constellation = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+    function findStar() {
+        var star = document.getElementById("star");
+        var indexStar = stars.indexOf(star.value);
+        var result = document.getElementById("result");
+        if (indexStar !== -1) {
+            result.innerText = constellation[indexStar];
+        }
+        else {
+            alert("Không có tên ngôi sao bạn nhập!");
+        }
+    }
+</script>
+</body>
+</html>
