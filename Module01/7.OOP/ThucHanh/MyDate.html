@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let MyDate = function () {
+
+        this.getDay = function () {
+            return this.day;
+        };
+        this.getMonth = function () {
+            return this.month;
+        };
+        this.getYear = function () {
+            return this.year;
+        };
+
+        this.setDay = function (day) {
+            this.day = day;
+        };
+        this.setMonth = function (month) {
+            this.month = month;
+        };
+        this.setYear = function (year) {
+            this.year = year;
+        };
+        // this.displayFullDay = function () {
+        //     return alert(this.day + "/" + this.month + "/" + this.year);
+        // }
+    };
+
+    MyDate.prototype.showInfor = function () {
+        return alert(this.day + "/" + this.month + "/" + this.year);
+    };
+    let date = new MyDate();
+
+    date.setDay(10);
+    date.setMonth(10);
+    date.setYear(2019);
+    date.showInfor();
+
+</script>
+</body>
+</html>

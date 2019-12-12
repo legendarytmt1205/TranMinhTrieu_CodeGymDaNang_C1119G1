@@ -2,99 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29dd2a8b-60ed-4689-a069-790521d7aa42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#4 Mang/Test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#5 Ham/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#5 Ham/yeuCau05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7.OOP/MoTaHinhChuNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.OOP/BaiTap/XayDungLopMoTaDienThoai.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.OOP/BaiTap/XayDungLopTemperature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.OOP/ThucHanh/FunnyCircles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.OOP/ThucHanh/MyDate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.OOP/ThucHanh/XayDungLopHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.OOP/ThucHanh/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#4 Mang/YeuCau04_Task02.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#4 Mang/YeuCau04_Task02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#5 Ham/yeuCau05.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#5 Ham/yeuCau05.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/BienKieuDuLieu_ToanTu/Bai01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/BienKieuDuLieu_ToanTu/Bai02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/BienKieuDuLieu_ToanTu/Bai03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/BienKieuDuLieu_ToanTu/Bai04.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/UngDungChuyenDoiTienTe/ChangeMoney.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/UngDungChuyenDoiTienTe/eadbf3a14d837d4ee58563a82bd6085a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/UngDungChuyenDoiTienTe/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/BaiTap/UngDungMayTinh/UngDungMayTinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/ThucHanh/KhaiBao_SuDungBien/BaiTap01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/ThucHanh/KhaiBao_SuDungBien/BaiTap02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/ThucHanh/KhaiBao_SuDungBien/BaiTap03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/ThucHanh/SuDungToanTu/ThucHanhSuDungTT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BienKieuDuLieu_ToanTu/ThucHanh/SuDungToanTu/ThucHanhSuDungToanTu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/ChiSoCanNangCoThe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/DoYouLoveMe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai04.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai05.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai06.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKIen01/Bai07.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTapCauTrucDieuKien02/Bai01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/LuyenTap_switch_case.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/Switch_Case.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/BaiTap/UngDungGood-fast-cheap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/CauTruc_If_Else.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/CauTruc_If_ElseIf.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/KiemTraNam Nhuan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/LuyenTapToanTu01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/LuyenTapToanTu02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/SuKienBanPhim/SuKienBanPhim.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/SuKienBanPhim/nobita.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/SuKienBanPhim/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/Sukien_Mouse/SuKien_Chuot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucDieuKien/ThucHanh/Sukien_Mouse/ball.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/BangCuuChuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai04.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai05.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai06.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai07.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai08.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/SoNguyenToToiUu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/BaiTap/SoNguyenTo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/ThucHanh/VongLapFor_01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/ThucHanh/VongLapFor_02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/ThucHanh/VongLapLongNhau.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/ThucHanh/VongLapWhile_01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/ThucHanh/VongLapWhile_02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CauTrucLap/ThucHanh/VongLap_DoWhile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Function/BaiTap/SoNguyenTo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/BaiTap/Dictionary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/BaiTap/FakingTextareaOnTyping.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/BaiTap/LuyenTapMang01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/BaiTap/PracticeWithArray.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/BaiTap/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/ThucHanh/CreateCaroSimple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/ThucHanh/FIndValueMaxInArray.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/ThucHanh/FindValueInArray.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/ThucHanh/PracticeWithArray.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mang/ThucHanh/ReverseArray.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/BaiTap/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/FlowChart/BaiTapPseudo-CodeAndFlowchartMoTaThuatToan_CauTrucDieuKien.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/FlowChart/BaiTapPseudo-CodeAndFlowchartMoTaThuatToan_CauTrucDieuKienThem.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/FlowChart/BaiTapPseudo-CodeAndFlowchartMoTaThuatToan_CauTrucLap.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/FlowChart/BaiTapPseudo-CodeAndFlowchartMoTaThuatToan_QuyDoiTienTe.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/FlowChart/SuDungngPseudo-CodeAndFlowchartDeMoTaGiaiThuatBai01.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/FlowChart/SuDungngPseudo-CodeAndFlowchartDeMoTaGiaiThuatBai02.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/HienThiDaura/BaiTap01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/HienThiDaura/BaiTap02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/HienThiDaura/BaiTap03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/HienThiDaura/BaiTap04.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/NhungJavascript/BaiTap01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/NhungJavascript/BaiTap02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/NhungJavascript/BaiTap03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NhapMonLapTrinh/ThucHanh/NhungJavascript/BaiTap03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.Mang/BaiTap/PracticeWithArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/5.Mang/BaiTap/PracticeWithArray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.OOP/MoTaHinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/7.OOP/BaiTap/MoTaHinhChuNhat.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,11 +28,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/7.OOP/MoTaHinhChuNhat.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/MyDate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/XayDungLopHinhTron.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/Dictionary.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/FakingTextareaOnTyping.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/LuyenTapMang01.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/PracticeWithArray.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai05.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai06.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai07.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="10" lean-forward="true" selection-end-line="36" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -140,14 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai01.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai04.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai05.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai07.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai08.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/test.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai03.html" />
-        <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai03.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai01.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai02.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai06.html" />
@@ -189,8 +164,16 @@
         <option value="$PROJECT_DIR$/Mang/BaiTap/Dictionary.html" />
         <option value="$PROJECT_DIR$/Function_Custom/BaiTap/Practice_02/test.html" />
         <option value="$PROJECT_DIR$/Function_Custom/BaiTap/Practice_02/Bai05.html" />
-        <option value="$PROJECT_DIR$/7.OOP/MoTaHinhChuNhat.html" />
         <option value="$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai05.html" />
+        <option value="$PROJECT_DIR$/7.OOP/MoTaHinhChuNhat.html" />
+        <option value="$PROJECT_DIR$/7.OOP/ThucHanh/XayDungLopTemperature.html" />
+        <option value="$PROJECT_DIR$/7.OOP/BaiTap/XayDungLopMoTaDienThoai.html" />
+        <option value="$PROJECT_DIR$/7.OOP/ThucHanh/FunnyCircles.html" />
+        <option value="$PROJECT_DIR$/7.OOP/BaiTap/MoTaHinhChuNhat.html" />
+        <option value="$PROJECT_DIR$/7.OOP/ThucHanh/test.html" />
+        <option value="$PROJECT_DIR$/7.OOP/ThucHanh/XayDungLopHinhTron.html" />
+        <option value="$PROJECT_DIR$/7.OOP/ThucHanh/MyDate.html" />
+        <option value="$PROJECT_DIR$/5.Mang/BaiTap/PracticeWithArray.html" />
       </list>
     </option>
   </component>
@@ -208,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,21 +198,45 @@
               <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module01" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module01" type="462c0819:PsiDirectoryNode" />
+              <item name="6.Function_Custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module01" type="462c0819:PsiDirectoryNode" />
+              <item name="6.Function_Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="BaiTap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module01" type="462c0819:PsiDirectoryNode" />
+              <item name="6.Function_Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="BaiTap" type="462c0819:PsiDirectoryNode" />
+              <item name="Practice_02" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CODEGYM_DN\CODEGYM_GIT\Module01\7.OOP\BaiTap" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,11 +372,18 @@
       <workItem from="1575962446621" duration="4000" />
       <workItem from="1575962534911" duration="669000" />
       <workItem from="1576061023293" duration="5587000" />
+      <workItem from="1576111124097" duration="1152000" />
+      <workItem from="1576112490294" duration="3284000" />
+      <workItem from="1576115810161" duration="822000" />
+      <workItem from="1576118078353" duration="154000" />
+      <workItem from="1576121542115" duration="7240000" />
+      <workItem from="1576134866026" duration="82000" />
+      <workItem from="1576135262853" duration="79000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215698000" />
+    <option name="totallyTimeSpent" value="228511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,19 +420,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai02.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai07.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai08.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/test.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai03.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai01.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai04.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai05.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai06.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_01/Bai03.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/BaiTap/PracticeLoop_02/Bai02.html" />
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/ThucHanh/test.html" />
-    <entry file="file://$PROJECT_DIR$/Mang/ThucHanh/ReverseArray.html" />
     <entry file="file://$PROJECT_DIR$/Mang/ThucHanh/FindValueInArray.html" />
     <entry file="file://$PROJECT_DIR$/Mang/ThucHanh/FIndValueMaxInArray.html" />
     <entry file="file://$PROJECT_DIR$/Mang/ThucHanh/PracticeWithArray.html" />
@@ -456,17 +456,95 @@
     <entry file="file://$PROJECT_DIR$/Function_Custom/BaiTap/Practice_01/Bai05.html" />
     <entry file="file://$PROJECT_DIR$/Function_Custom/BaiTap/Practice_02/Bai05.html" />
     <entry file="file://$PROJECT_DIR$/Function_Custom/BaiTap/Practice_01/Bai04.html" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="3058" column="4" selection-start-line="3058" selection-start-column="4" selection-end-line="3058" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/BaiTap/XayDungLopTemperature.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/BaiTap/XayDungLopMoTaDienThoai.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/FunnyCircles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/BaiTap/MoTaHinhChuNhat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/MyDate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/XayDungLopHinhTron.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/Dictionary.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/FakingTextareaOnTyping.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/LuyenTapMang01.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.OOP/ThucHanh/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="10" lean-forward="true" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.Mang/BaiTap/PracticeWithArray.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai05.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="258">
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7.OOP/MoTaHinhChuNhat.html">
+    <entry file="file://$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai06.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.Function_Custom/BaiTap/Practice_02/Bai07.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="72">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>

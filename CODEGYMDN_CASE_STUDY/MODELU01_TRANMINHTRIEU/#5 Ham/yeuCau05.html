@@ -68,9 +68,9 @@
     }
 
     function displayCustomers() {
-        var choose = prompt("Chọn khách hàng muốn hiển thị \n"
-                            + getNameAndIdentityCard() + "\n"
-                            + (nameArray.length+1) + " .Back to menu");
+        var choose = prompt("Vui lòng chọn khách hàng! \n"
+            + getNameAndIdentityCard() + "\n"
+            + (nameArray.length + 1) + " .Back to menu");
         choose--;
         switch (choose) {
             case (nameArray.length):
@@ -78,10 +78,51 @@
                 displayMainMenu();
                 break;
             default:
-                if(checkEdit){
+                if (checkEdit) {
                     checkEdit = false;
-                    prompt(displayInformationCustomer(choose));
-                }else {
+                    var edit = prompt(displayInformationCustomer(choose));
+                    switch (parseInt(edit)) {
+                        case 1:
+                            nameArray[choose] = prompt("Enter name you want edit!");
+                            break;
+                        case 2:
+                            identityCardArray[choose] = prompt("Enter identityCard you want edit!");
+                            break;
+                        case 3:
+                            birthdayArray[choose] = prompt("Enter birthday you want edit!");
+                            break;
+                        case 4:
+                            emailArray[choose] = prompt("Enter email you want edit!");
+                            break;
+                        case 5:
+                            addressArray[choose] = prompt("Enter address you want edit!");
+                            break;
+                        case 6:
+                            typeCustomerArray[choose] = prompt("Enter typeCustomer you want edit!");
+                            break;
+                        case 7:
+                            discountArray[choose] = prompt("Enter discount you want edit!");
+                            break;
+                        case 8:
+                            numberOfPeopleArray[choose] = prompt("Enter numberOfPeople you want edit!");
+                            break;
+                        case 9:
+                            rentDaysArray[choose] = prompt("Enter rentDays you want edit!");
+                            break;
+                        case 10:
+                            typeServiceArray[choose] = prompt("Please! Do you want to choose type service?\n" + "1. Villa\n" + "2. House\n" + "3. Room\n");
+                            break;
+                        case 11:
+                            typeRoomArray[choose] = prompt("Enter typeRoom you want edit!");
+                            break;
+                        case 12:
+                            displayCustomers();
+                            break;
+                        default:
+                            alert("failed");
+                            displayMainMenu();
+                    }
+                } else {
                     alert(displayInformationCustomer(choose));
                 }
         }
@@ -89,7 +130,7 @@
     }
 
     function displayInformationCustomer(index) {
-        return  "1. Name:  " + nameArray[index] + "\n"
+        return "1. Name:  " + nameArray[index] + "\n"
             + "2. ID Card:  " + identityCardArray[index] + "\n"
             + "3. Birthday:  " + birthdayArray[index] + "\n"
             + "4. Email:  " + emailArray[index] + "\n"
@@ -98,8 +139,9 @@
             + "7. Discount:  " + discountArray[index] + "\n"
             + "8. Number Of Accompanying:  " + numberOfPeopleArray[index] + "\n"
             + "9. Rent Days:  " + rentDaysArray[index] + "\n"
-            + "11. Type Service:  " + typeServiceArray[index] + "\n"
-            + "11. Type Room:  " + typeRoomArray[index]  ;
+            + "10. Type Service:  " + typeServiceArray[index] + "\n"
+            + "11. Type Room:  " + typeRoomArray[index] + "\n"
+            + "12. Back";
     }
 
     function editInformationCustomer() {
@@ -108,22 +150,32 @@
     }
 
     function deleteCustomer() {
-
+        var del = prompt(getNameAndIdentityCard() + "\n" + (nameArray.length + 1) + " .Back ");
+        if (parseInt(del) === (nameArray.length + 1)) {
+            displayMainMenu();
+        }
+        nameArray.splice(parseInt(del) - 1, 1);
+        identityCardArray.splice(parseInt(del) - 1, 1);
+        birthdayArray.splice(parseInt(del) - 1, 1);
+        emailArray.splice(parseInt(del) - 1, 1);
+        addressArray.splice(parseInt(del) - 1, 1);
+        typeCustomerArray.splice(parseInt(del) - 1, 1);
+        discountArray.splice(parseInt(del) - 1, 1);
+        numberOfPeopleArray.splice(parseInt(del) - 1, 1);
+        rentDaysArray.splice(parseInt(del) - 1, 1);
+        typeServiceArray.splice(parseInt(del) - 1, 1);
+        typeRoomArray.splice(parseInt(del) - 1, 1);
+        displayMainMenu();
     }
 
     function getNameAndIdentityCard() {
         var result = "";
         for (var i = 0; i < nameArray.length; i++) {
-            result += i + 1 + ". " + "Name: " + nameArray[i] + " - " + "ID: " + identityCardArray[i]   + "\n";
+            result += i + 1 + ". " + "Name: " + nameArray[i] + " - " + "ID: " + identityCardArray[i] + "\n";
         }
         return result;
     }
 
-    function getInfoCustomer() {
-
-    }
-
 </script>
-
 </body>
 </html>
