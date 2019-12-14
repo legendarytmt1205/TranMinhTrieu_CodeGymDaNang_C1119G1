@@ -6,22 +6,30 @@
 </head>
 <body>
 <script>
-    var information = prompt("Please! Do you want to choose type service?\n"
-        + "1. Add new customer\n"
-        + "2. Delete customer\n");
+
+    do {
+        var information = prompt("Please! Do you want to choose type service?\n"
+            + "1. Add new customer\n"
+            + "2. Delete customer\n");
+    } while (isNaN(information) || parseInt(information) < 1 || parseInt(information) >2);
+
+    // var information = prompt("Please! Do you want to choose type service?\n"
+    //     + "1. Add new customer\n"
+    //     + "2. Delete customer\n");
+
     switch (information) {
         case"1":
             var arrNameCustomers = [];
             result = "";
             var numberOfCustomer = parseInt(prompt("Please! Enter the number of customer  you want to add!?"));
             for (var i = 0; i < numberOfCustomer; i++) {
-                var nameCustomer =  prompt("Please! Enter customer name number :  " +(i+1));
+                var nameCustomer = prompt("Please! Enter customer name number :  " + (i + 1));
                 arrNameCustomers.push(nameCustomer);
             }
-            for (var i = 0; i < numberOfCustomer; i++) {
-                result += i + 1 + ". " + arrNameCustomers[i] + "\n";
-            }
-            alert(result);
+            // for (var i = 0; i < numberOfCustomer; i++) {
+            //     result += i + 1 + ". " + arrNameCustomers[i] + "\n";
+            // }
+            //alert(result);
 
             //Display customer name by alphabel
             arrNameCustomers.sort();
@@ -29,10 +37,10 @@
                 result += i + 1 + ". " + arrNameCustomers[i] + "\n";
             }
             alert(result);
-            
+
             break;
         case"2":
-            alert("");
+            alert("Vui lòng mở task 02");
             break;
     }
 </script>

@@ -6,13 +6,130 @@
 </head>
 <body>
 <script>
-var str = new String("111111111111111");
-
-var Person =  function(){
-
-};
-
-alert(str);
- </script>
+    let arrList = [];
+    function addNewCustomer() {
+        let name = prompt("Input Name : ");
+        let id = prompt("ID : ");
+        let dayOfBith = prompt("Day of Birth : ");
+        let email = prompt("Email : ");
+        let address = prompt("Address : ");
+        let typeMember = prompt("Type Member : " + " \n" + " Diamond " + " \n" + " Platinum" + " \n" + " Gold" + " \n" + " Silver" + " \n" + " Member");
+        let discount = prompt("Discount : " + "\n" + "Input 0 - 100");
+        let numPeople = prompt("Number People : ");
+        let rentDay = prompt("Rent Day : ");
+        let typeOfService = prompt("Type of Service : " + " \n" + " Villa" + " \n" + " House" + " \n" + " Room");
+        let typeOfRoom = prompt("Type of Room : " + " \n" + " Vip" + " \n" + " Business" + " \n" + " Normal");
+        let money;
+        if (typeOfService === "Villa") {
+            money = 500 * rentDay * (1 - discount / 100);
+        } else if (typeOfService === "House") {
+            money = 300 * rentDay * (1 - discount / 100);
+        } else
+            money = 100 * rentDay * (1 - discount / 100);
+        arrList.push([name, id, dayOfBith, email, address, typeMember, discount, numPeople, rentDay, typeOfService, typeOfRoom, money]);
+        //arrList.push([name, id, dayOfBith, email, address, typeMember]);
+    }
+    function displayCustomerID() {
+        let str = "";
+        for (let i = 0; i < arrList.length; i++) {
+            str += "Customer " + i + "." + "\n";
+            for (let j = 0; j < 2; j++) {
+                str += j + " ." + arrList[i][j] + "\n";
+            }
+        }
+        return str;
+    }
+    function displayAllInformation(t) {
+        let str = "";
+        for (let i = 0; i < arrList[t].length; i++) {
+            str += i + " ." + arrList[t][i] + "\n";
+        }
+        return str;
+    }
+    function editCustomer(i, j) {
+        let inp = prompt("edit infomation : ");
+        arrList[i][j] = inp;
+        //alert(arrList[i][j]);
+        alert(displayAllInformation(i));
+    }
+    function deleteCustomer(t, i) {
+        arrList[t].splice(i, 1);
+        alert(displayAllInformation(t));
+    }
+    let exit1 = true;
+    function mainMenu() {
+        do {
+            let inp = parseInt(prompt("Selecte option : " + "\n1.Add New MemBer " + "\n2.Display Customer" + "\n3.Edit Customer " + "\n4.Delete Customer" + "\n5.Exit"));
+            switch (inp) {
+                case 1 :
+                    addNewCustomer();
+                    exit1 = false;
+                    break;
+                case 2:
+                    if (arrList.length === 0) {
+                        alert("Empty");
+                    } else {
+                        let back = false;
+                        do {
+                            let choice = prompt(displayCustomerID() + "Press x to Back");
+                            if (choice === "x") {
+                                back = true;
+                            } else {
+                                let choice1 = prompt(displayAllInformation(parseInt(choice)) + " Press x to Back");
+                                if (choice1 === "x") {
+                                    back = false;
+                                }
+                            }
+                        } while (!back);
+                    }
+                    exit1 = false;
+                    break;
+                case 3:
+                    if (arrList.length === 0) {
+                        alert("Empty");
+                    } else {
+                        let back1 = false;
+                        do {
+                            let choice12 = prompt(displayCustomerID() + "Press x to Back");
+                            if (choice12 === "x") {
+                                back1 = true;
+                            } else {
+                                let choice13 = prompt(displayAllInformation(parseInt(choice12)) + " Press x to Back");
+                                editCustomer(choice12, choice13);
+                                back1 = true;
+                            }
+                        } while (!back1);
+                    }
+                    exit1 = false;
+                    break;
+                case  4:
+                    if (arrList.length === 0) {
+                        alert("Empty");
+                    } else {
+                        let back1 = false;
+                        do {
+                            let choice123 = prompt(displayCustomerID() + "Press x to Back");
+                            if (choice123 === "x") {
+                                back1 = true;
+                            } else {
+                                let choice133 = prompt(displayAllInformation(parseInt(choice123)) + " Press x to Back");
+                                deleteCustomer(choice123, choice133);
+                                back1 = true;
+                            }
+                        } while (!back1);
+                    }
+                    exit1 = false;
+                    break;
+                case 5:
+                    exit1 = true;
+                    break;
+                default:
+                    alert("Not avalid");
+                    exit1 = false;
+            }
+        } while (!exit1);
+    }
+    mainMenu();
+</script>
 </body>
 </html>

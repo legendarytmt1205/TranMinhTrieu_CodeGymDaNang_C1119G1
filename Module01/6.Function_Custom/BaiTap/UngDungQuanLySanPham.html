@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm</title>
+</head>
+<body>
+<label>Add new product</label><br/>
+<br/><input id="inputProduct"  autofocus type="text" placeholder="New product">
+<button id="btnClick" onclick="addProducts()">Add</button>
+<br/><br/><br/><br/><label>Display All Product</label><br/>
+<br/>
+<div id="add_div">Product Name</div>
+
+<script>
+
+    let arrayProduct = [];
+    var add_div = document.getElementById("add_div");
+    var product_name = document.getElementById("inputProduct");
+
+    function showPrducts() {
+
+    }
+
+    product_name.addEventListener("keydown",
+        function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("btnClick").click();
+            }
+        }
+    );
+    var i=0;
+    function addProducts() {
+        if (product_name.value ==="") {
+            return;
+        }
+        add_div.innerHTML += "<br/><label>" + product_name.value
+            + "</label><button onclick=\"editProducts()\" >edit</button><button onclick='deleteProducts()'>delete</button>";
+        product_name.value = "";
+        product_name.focus();
+    }
+
+    function editProducts() {
+        alert("aaaaaaaa");
+    }
+
+    function deleteProducts() {
+            alert("aaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    }
+
+</script>
+</body>
+</html>

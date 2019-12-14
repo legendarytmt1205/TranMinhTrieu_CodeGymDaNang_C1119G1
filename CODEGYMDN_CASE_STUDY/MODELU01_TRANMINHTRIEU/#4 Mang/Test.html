@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let arrListCustomer = [];
+    let ListCustomer = [];
     function displayMainMenu() {
         choose = prompt(
             "1. Add New Customer\n" +
@@ -57,15 +57,15 @@
         customerInfo.push(typeRoom);
         customerInfo.push(rentDays);
         customerInfo.push(typeService);
-        arrListCustomer.push(customerInfo);
+        ListCustomer.push(customerInfo);
         displayMainMenu();
     }
     function get2InforCustomer() {
         let result = "";
-        for (i = 0; i < arrListCustomer.length; i++) {
+        for (i = 0; i < ListCustomer.length; i++) {
             result += "Số thứ tự:" + " " + i + "\n"
-                + "0.Name:" + " " + arrListCustomer[i][0] + "\n"
-                + "1.ID Card" + " " + arrListCustomer[i][1] + "\n"
+                + "0.Name:" + " " + ListCustomer[i][0] + "\n"
+                + "1.ID Card" + " " + ListCustomer[i][1] + "\n"
                 + "============================\n";
         }
         return result;
@@ -85,17 +85,17 @@
         alert(getInformationCustomer(index));
     }
     function getInformationCustomer(index) {
-        return "0. Name: " + " " + arrListCustomer[index][0] + "\n"
-            + "1. ID Card: " + " " + arrListCustomer[index][1] + "\n"
-            + "2. Birthday: " + " " + arrListCustomer[index][2] + "\n"
-            + "3. Email: " + " " + arrListCustomer[index][3] + "\n"
-            + "4. Address: " + " " + arrListCustomer[index][4] + "\n"
-            + "5. Type Customer: " + " " + arrListCustomer[index][5] + "\n"
-            + "6. Discount: " + " " + arrListCustomer[index][6] + "\n"
-            + "7. Number Of Accompanying: " + " " + arrListCustomer[index][7] + "\n"
-            + "8. Type Room: " + " " + arrListCustomer[index][8] + "\n"
-            + "9. Rent Days: " + " " + arrListCustomer[index][9] + "\n"
-            + "10. Type Service: " + " " + arrListCustomer[index][10] + "\n";
+        return "0. Name: " + " " + ListCustomer[index][0] + "\n"
+            + "1. ID Card: " + " " + ListCustomer[index][1] + "\n"
+            + "2. Birthday: " + " " + ListCustomer[index][2] + "\n"
+            + "3. Email: " + " " + ListCustomer[index][3] + "\n"
+            + "4. Address: " + " " + ListCustomer[index][4] + "\n"
+            + "5. Type Customer: " + " " + ListCustomer[index][5] + "\n"
+            + "6. Discount: " + " " + ListCustomer[index][6] + "\n"
+            + "7. Number Of Accompanying: " + " " + ListCustomer[index][7] + "\n"
+            + "8. Type Room: " + " " + ListCustomer[index][8] + "\n"
+            + "9. Rent Days: " + " " + ListCustomer[index][9] + "\n"
+            + "10. Type Service: " + " " + ListCustomer[index][10] + "\n";
            // + "============== \n";
     }
 </script>

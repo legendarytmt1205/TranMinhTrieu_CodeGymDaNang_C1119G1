@@ -7,21 +7,25 @@
 <body>
 <script>
     var word = prompt("Nhập vào từ cần tra cứu");
-    if (isPalindrome(word) === true) {
+    if (isPalindrome(word)) {
         document.write("Đối xứng");
     } else {
         document.write("Không đối xứng");
     }
 
     function isPalindrome(word) {
+        var flag = false;
         for (var i = 0; i < word.length / 2; i++) {
-            if (word[i] === word[word.length - 1 - i]) {
-                return true;
+            if (word[i] !== word[word.length - 1 - i]) {
+              return false;
             } else {
-                return false;
+                flag = true;
             }
         }
+        return flag;
     }
+
+
 </script>
 
 </body>
