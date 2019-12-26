@@ -8,26 +8,26 @@
 <script>
 
      //#region Bài 01
-     var myColor = ["Red", "Green", "White", "Black"];
-     myColor.toString();
-     document.write(myColor);
+     // var myColor = ["Red", "Green", "White", "Black"];
+     // myColor.toString();
+     // document.write(myColor);
      //#endregion
 
     //#region Bài 02
-    var num = prompt();
-    var str = num.replace(/\s/g, "");
-    var array = [str[0]];
-
-    for (let x = 1; x < str.length; x++) {
-        if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
-            array.push('-', str[x]);
-        } else {
-            array.push(str[x]);
-        }
-    }
-    for (var item of array) {
-        document.write(array[item]);
-    }
+    // var num = prompt();
+    // var str = num.replace(/\s/g, "");
+    // var array = [str[0]];
+    //
+    // for (let x = 1; x < str.length; x++) {
+    //     if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+    //         array.push('-', str[x]);
+    //     } else {
+    //         array.push(str[x]);
+    //     }
+    // }
+    // for (var item of array) {
+    //     document.write(array[item]);
+    // }
     // for (var i = 0; i < array.length; i++) {
     //     document.write(array[i]);
     // }
@@ -45,10 +45,10 @@
             result.push(str[i].toLowerCase());
         }
     }
-    for (var item in result) {
-        document.write(result[item])
-    }
-    document.write(result.join());
+    // for (var item in result) {
+    //     document.write(result[item])
+    // }
+    document.write(result.join(''));
     //#endregion
 
 </script>

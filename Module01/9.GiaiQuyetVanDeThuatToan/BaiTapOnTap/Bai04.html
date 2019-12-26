@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sum = 15;
+    let n = 3;
+    let m = 0;
+    let a = 1;
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+            m = 1;
+        } else {
+            m = -1
+        }
+        a *= i;
+        sum += (m / a);
+    }
+    document.write(sum);
+</script>
+
+</body>
+</html>

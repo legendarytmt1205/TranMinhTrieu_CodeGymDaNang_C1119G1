@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let array = [5.5,5,5.5, 1, 3];
+    let max = 0;
+    let index = 0;
+
+    findMaxScore(array);
+
+    function findMaxScore(array) {
+        max = array[0];
+        for (var i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+                index = i;
+            }
+        }
+        document.writeln("Giá trị lớn nhất là: " + max + "tại vị trí: " + array.lastIndexOf(index));
+    }
+</script>
+
+</body>
+</html>

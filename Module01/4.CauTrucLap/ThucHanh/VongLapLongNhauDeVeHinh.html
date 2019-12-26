@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+​
+<script>
+    //vẽ hình chữu nhật đầy
+    // for (var j = 0; j < 10; j++){
+    //     document.write("*");
+    // }
+    for (var i = 0; i < 5; i++){
+        for (var j = 0; j < 10; j++){
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+
+    //vẽ tam giác vuông
+    //     for (var i = 0; i < 4 ; i++) {
+    //         for (var j = 0; j <= i; j++) {
+    //             document.writeln("*");
+    //         }
+    //         document.write("<br>");
+    //     }
+    //
+    // for (var i = 0; i < 5 ; i++) {
+    //     for (var j = 0; j <5-i; j++) {
+    //         document.writeln("*");
+    //     }
+    //     document.write("<br>");
+    // }
+    //bảng cửa chương
+    // let sout, i, j;
+    // sout = "<table border='1' width='800' cellspacing='2' cellpadding='30'>";
+    // i = j = 1;
+    // while (i <= 10) {
+    //     sout = sout + "<tr>";
+    //     while (j <= 10) {
+    //         sout = sout + "<td>" + i * j + "</td>";
+    //         j++;
+    //     }
+    //     sout = sout + "</tr>";
+    //     j = 1;
+    //     i++;
+    // }
+    // sout = sout + "</table>";
+    // document.write(sout);
+
+    //vẽ hình chữ nhật rỗng
+    // for (var i = 0; i < 6; i++) {
+    //     for (var j = 0; j < 5; j++) {
+    //         if (i === 0 || j === 0 || i === 5 || j === 4) {
+    //             document.write("*");
+    //         }
+    //         else {
+    //             document.write(" &nbsp");
+    //         }
+    //      }
+    //     document.write("<br>");
+    // }
+
+
+    //vẽ tam giác cân với chiều cao là 5
+    // let h = 5;
+    //
+    // let count = h;
+    // let n = h;
+    // for (var i = 0; i < h; i++) {
+    //     for (var j = 0; j < 2 * h - 1; j++) {
+    //         if (j >= count && j <= n) {
+    //             document.write("*");
+    //         } else {
+    //             document.write("&nbsp");
+    //         }
+    //         count--;
+    //         n++
+    //     }
+    //     document.write("<br>");
+    // }
+    for (let i = 0; i<8;i++) {
+        for (let j = 0; j<8; j++) {
+            if (i === 0 || j === 0 || i === 7 || j === 7) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+
+
+</script>
+</body>
+</html>

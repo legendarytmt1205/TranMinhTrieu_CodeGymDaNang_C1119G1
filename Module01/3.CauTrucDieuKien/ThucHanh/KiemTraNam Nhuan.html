@@ -5,18 +5,28 @@
     <title>Kiểm tra năm nhuận</title>
 </head>
 <body>
-<input id = "namNhuan" type="text"  placeholder="Nhập vào năm nhuận">
-<input  type="button" value="search" onclick="id(this.value)"><br><br>
+<input id = "namNhuan" type="text"  placeholder="Nhập vào năm bất kỳ!">
+<input  id="btnClick" type="button" value="search" onclick="search(this.value)"><br><br>
 Kết quả     <input id="result" type="text">
 
 <script>
-    function id() {
-        var year = document.getElementById("namNhuan");
+
+    var year = document.getElementById("namNhuan");
+
+    year.addEventListener("keydown",
+        function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("btnClick").click();
+            }
+        }
+    );
+    function search() {
         if((year.value%4===0 &&year.value%100!==0)||year.value%400===0){
-            alert("Năm : " + year + " là năm nhuận");
+            alert("Năm : " + year.value + " là năm nhuận");
         }
         else{
-            alert("Năm : " + year + " không là năm nhuận");
+            alert("Năm : " + year.value + " không là năm nhuận");
         }
     }
 </script>

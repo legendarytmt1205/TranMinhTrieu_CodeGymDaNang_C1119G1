@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<input type="button" value="Customer" onclick="showChoose(value)">
+<input type="button" value="Employee" onclick="showChoose(value)">
+<p id="contentShow"></p>
+<br/>
+<div id="displayCustomer" style="display: none">
+    <br/><br/>
+    <input type="text" id="inputName" placeholder="Name" />
+    <input type="text" id="inputAddress" placeholder="Address"/>
+    <input type="button" value="Add" onclick = "addInfoCustomer()"/>
+    <input type="button" value="Show" onclick="showInfoCustomer()"/>
+    <br/>
+    <table id="tblCustomer"></table>
+</div>
+<div id="displayEmployee" style="display: none">
+    <br/><br/>
+    <input type="text" id ="inputSalary" placeholder="Salary"/>
+    <input type="text" id ="inputWorkDay" placeholder="WorkDay"/>
+    <input type="button" value="Add" onclick = "addInfoEmployee()"/>
+    <input type="button" value="Show" onclick="showInfoEmployee()"/>
+    <br/>
+    <table id="tblEployee"></table>
+</div>
+<script type="text/javascript" src="Customer.js"></script>
+<script type="text/javascript" src="Employee.js"></script>
+<script type="text/javascript" src="RunMain.js"></script>
+</body>
+</html>

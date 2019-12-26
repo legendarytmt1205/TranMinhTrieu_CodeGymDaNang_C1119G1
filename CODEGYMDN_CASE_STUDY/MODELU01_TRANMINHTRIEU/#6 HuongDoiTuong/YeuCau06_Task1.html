@@ -99,7 +99,6 @@
         switch (choose) {
             case "1":
                 addNewCustomer();
-                //displayMainMenu();
                 break;
             case "2":
                 displayInformationCustomer();
@@ -141,31 +140,6 @@
         listCustomers.push(customer);
         displayMainMenu();
     }
-
-    // function checkBirthDay(birthDay) {
-    //     regexp = /^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/(19[6-9][0-9]|200[0-9])$/;
-    //     if (regexp.test(birthDay)) {
-    //         alert("Ngay sinh hop le");
-    //         return birthDay;
-    //     } else {
-    //         alert("Ngay sinh khong hop le, vui long nhap lai!!!");
-    //         checkBirthDay(prompt("Enter Birthday Customer (dd/MM/YYYY):"));
-    //         return birthDay;
-    //     }
-    // }
-
-    // function checkEmail(email) {
-    //     regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
-    //     if (regexp.test(email)) {
-    //         alert("Email hop le");
-    //         return email;
-    //     } else {
-    //         alert("Email khong hop le, vui long nhap lai!!!");
-    //         checkEmail(prompt("Enter email Customer:"));
-    //         return email;
-    //     }
-    // }
-
     //#endregion
 
     //#region Hiển thị thông tin khách hàng
@@ -239,6 +213,9 @@
                 case 12:
                     //listCustomers[numberInfo - 1].getTotalPays(prompt("Enter name you want edit!"));
                     break;
+                case 13:
+                    displayMainMenu();
+                    break;
                 default:
                     alert("failed");
                     displayMainMenu();
@@ -246,7 +223,6 @@
         } else {
             alert(getInformationCustomer(index));
         }
-
     }
 
     function getInformationCustomer(index) {
@@ -296,7 +272,7 @@
         if (parseInt(numRemove) === (listCustomers.length + 1)) {
             displayMainMenu();
         }
-        listCustomers.splice(numRemove - 1,1);
+        listCustomers.splice(numRemove - 1, 1);
         displayMainMenu();
     }
 
@@ -309,9 +285,9 @@
             displayMainMenu();
         }
         alert("Tổng tiền thanh toán của: "
-            + listCustomers[numRemove-1].getNameCustomer()
+            + listCustomers[numRemove - 1].getNameCustomer()
             + " là: "
-            + listCustomers[numRemove-1].getTotalPays());
+            + listCustomers[numRemove - 1].getTotalPays());
         displayMainMenu();
     }
 

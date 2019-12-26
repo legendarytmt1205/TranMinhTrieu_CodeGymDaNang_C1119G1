@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var str = prompt("Nhập vào chuỗi bất kỳ");
+    var lower = str.toLocaleLowerCase();
+    var result = [];
+    for (var i=0; i <str.length; i++) {
+        if (lower.includes(str[i])) {
+            result.push(str[i].toUpperCase());
+        }
+        else {
+            result.push(str[i].toLowerCase());
+        }
+    }
+    document.write(result.join(""));
+</script>
+</body>
+</html>

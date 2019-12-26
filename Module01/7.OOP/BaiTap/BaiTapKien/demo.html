@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<input type="text" placeholder="Name" id="name"/>
+<input type="text" placeholder="Price" id="price"/>
+<input type="text" placeholder="Discount" id="discount"/>
+<br/>
+<p id="notification"></p>
+<br/><br/>
+<input type="button" value="Add" onclick = "addProduct()"/>
+<input type="button" value="Show" onclick="show()"/>
+<br/>
+<table id="tableProduct">
+
+</table>
+
+<button id="btnShowAndHide" onclick="test()">Show</button>
+
+<p id="textContent">xzcxzczxcasdqe</p>
+<script type="text/javascript" src="Phone.js"></script>
+<script type="text/javascript" src="Run.js"></script>
+</body>
+</html>

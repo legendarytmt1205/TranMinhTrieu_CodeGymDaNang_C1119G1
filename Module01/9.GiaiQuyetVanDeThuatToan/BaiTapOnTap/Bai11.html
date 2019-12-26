@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //sắp xếp mảng một chiều theo thứ tự tăng dần
+    let arr = [1, 4, 2, 3, 2, 2, 67, 1, 56, 9];
+    let temp;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    document.write(arr);
+
+
+    // tìm phần tử xuất hiện nhiều nhất trong mảng
+    // let arr = [1, 4, 2, 3, 2, 2, 67, 43, 56, 9,3,3,3,3,3];
+
+    // var arr = [1, 4, 2, 3, 2, 2, 67, 43, 56, 9, 3, 3, 3, 3, 3];
+    // var countMax = 1;
+    // var count = 0;
+    // var item;
+    // for (var i = 0; i < arr.length; i++) {
+    //     for (var j = i; j < arr.length; j++) {
+    //         if (arr[i] == arr[j])
+    //             count++;
+    //         if (countMax < count) {
+    //             countMax = count;
+    //             item = arr[i];
+    //         }
+    //     }
+    //     count = 0;
+    // }
+    // document.write("Phần tử " + item + " xuất hiện " + countMax + " lần ");
+    //
+
+
+    //đếm số lần xuất hiện của phần tử nhập vào xuất hiện trong mảng cho trước
+
+    // var number = parseInt(prompt("Enter number"));
+    // var arr = [1, 4, 2, 3, 2, 2, 67, 43, 56, 9, 3, 3, 3, 3, 3];
+    // var count = 0;
+    // for (var i = 0; i < arr.length; i++) {
+    //     if (number === arr[i]) {
+    //         count++;
+    //     }
+    // }
+    // document.write("Phần tử " + number + " xuất hiện " + count + " lần ");
+
+
+    //loại bỏ phần tử trùng lặp ở trong mảng
+    // function getUnique(array){
+    //     var newArray = [];
+    //     // Loop through array values
+    //     for(var i=0; i < array.length; i++){
+    //         if(newArray.indexOf(array[i]) === -1) {
+    //             newArray.push(array[i]);
+    //         }
+    //     }
+    //     return newArray;
+    // }
+    //
+    // //var names = ["John", "Peter", "Clark", "Harry", "John", "Alice","Alice","Alice"];
+    // var names = [1, 4, 2, 3, 2, 2, 67, 43, 56, 9,3,3,3,3,3];
+    // var newArray = getUnique(names);
+    // document.write(newArray);
+
+</script>
+</body>
+</html>

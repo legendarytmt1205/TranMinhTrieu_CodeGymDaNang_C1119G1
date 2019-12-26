@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let arr = [];
+    while (count<6) {
+        count++;
+        let n = parseInt(prompt("Nhập vào số nguyên n"));
+        arr.push(n);
+    }
+
+    let temp;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    document.write(arr);
+</script>
+
+</body>
+</html>

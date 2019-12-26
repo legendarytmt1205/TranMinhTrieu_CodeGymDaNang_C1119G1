@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let upMeter = 0;
+    let downMeter = 0;
+    let highMeter = 0;
+    do {
+        let str = prompt("Enter three number!");
+        str.split(" ");
+        let arr = str.split(" ");
+        upMeter = parseInt(arr[0]);
+        downMeter = parseInt(arr[1]);
+        highMeter = parseInt(arr[2]);
+    } while (downMeter < 1 || highMeter < 1 || upMeter > Math.pow(10, 9) || highMeter > Math.pow(10, 9));
+    document.write(runDay(upMeter, downMeter, highMeter));
+
+    function runDay(upMeter, downMeter, highMeter) {
+
+        if (upMeter >= highMeter) {
+            return 1;
+        }
+        if (upMeter < highMeter && upMeter <= downMeter) {
+            return "never!";
+        }
+        return (Math.ceil((highMeter - upMeter) / (upMeter - downMeter)) + 1);
+    }
+</script>
+</body>
+</html>

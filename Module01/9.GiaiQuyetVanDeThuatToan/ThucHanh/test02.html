@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrResult = [];
+    let min = 0;
+    let sum = 0;
+    let flag = 0;
+    let arr = [1, -2, -3, 100, -90, 10, 5, 6, -2, 20, -2, 3];
+    alert(findMin(arr));
+
+    function findMin(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j< arr.length; j++) {
+                sum += arr[j];
+                flag = sum;
+                if (j >= 2) {
+                    if (min>sum) {
+                        min = sum;
+                    }
+                    sum = flag;
+                }
+                if (j === arr.length - 1) {
+                    arr.splice(arr[0], 1);
+                }
+            }
+        }
+        return min;
+    }
+
+</script>
+</body>
+</html>

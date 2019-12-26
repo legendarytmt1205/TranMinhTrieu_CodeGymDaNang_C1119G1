@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ElectricLamp() {
+        this.setStatus = function (status) {
+            this.status = status;
+        };
+        this.getStatus = function () {
+            return this.status;
+        };
+        this.turnOff = function () {
+            this.status = false;
+        };
+        this.turnOn = function () {
+            this.status = true;
+        };
+    }
+
+    function SwitchButton() {
+
+        this.switchOff = function (electricLamp) {
+            electricLamp.turnOff();
+            document.write("Đèn đã tắt!<br/>");
+        };
+        this.switchOn = function (electricLamp) {
+            electricLamp.turnOn();
+            document.write("Đèn đã mở!<br/>");
+        };
+    }
+
+    var electricLamp = new ElectricLamp();
+    var switchButton = new SwitchButton();
+    switchButton.switchOff(electricLamp);
+
+</script>
+</body>
+</html>

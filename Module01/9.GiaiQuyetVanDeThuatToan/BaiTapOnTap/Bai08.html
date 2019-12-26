@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 37;
+    let b = 13;
+    document.write(uocChung(a, b)+ "<br/>");
+    document.write(boiChung(a, b));
+
+    function uocChung(a, b) {
+        if (a <= 0 && b <= 0) {
+            return -1;
+        }
+        while (a * b !== 0) {
+            if (a > b) {
+                a %= b;
+            } else {
+                b %= a;
+            }
+        }
+        return a + b;
+    }
+
+    function boiChung(a, b) {
+        let uoc = uocChung(a, b);
+        if (a * b === 0) {
+            return ;
+        }
+        return (a*b)/uoc;
+        // for (let i = a; i <= a * b; i+=a) {
+        //     if (i%a===0 && i%b===0) {
+        //         return i;
+        //     }
+        // }
+    }
+</script>
+
+</body>
+</html>

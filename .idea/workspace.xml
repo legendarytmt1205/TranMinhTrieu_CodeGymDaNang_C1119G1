@@ -2,32 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c269452-4c56-440a-8fa4-72d2ae48d092" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module01/Mang/BaiTap/Dictionary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01/Mang/BaiTap/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/.idea/CODEGYMDN_CASE_STADY.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/#1 Bien Kieu Du Lieu Va Toan Tu/YeuCau01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/#2 Cau Truc Cau Dieu Kien/YeuCau02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/YeuCau03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/#3 Cau Truc Lap/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/.idea/MODELU01_TRANMINHTRIEU.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/.idea/dictionaries/Tran_Minh_Trieu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STADY/MODELU01_TRANMINHTRIEU/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/4.CauTrucLap/ThucHanh/VongLapLongNhauDeVeHinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/5.Mang/BaiTap/BaiTapThem/SapXepMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/BaiTapKien/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/BaiTapThucTe/Customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/BaiTapThucTe/Employee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/BaiTapThucTe/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/BaiTapThucTe/RunMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/BaiTap_BongDen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/CongTac_BongDen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/GameDiChuyenDoiTuong/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/BaiTap/GameNinja/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/7.OOP/lolo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/BaiTap/BaiTapConOcSen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/BaiTap/ValidateClassName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/BaiTap/ValidatePhoneNumber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/BaiTap/Validate_account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/BaiTap/Validate_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/BaiTap/testDaySoTang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/ThucHanh/KT_KiTuDauTien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/8.String/ThucHanh/KT_MaQuocGia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/9.GiaiQuyetVanDeThuatToan/BaiTapOnTap/Bai01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/9.GiaiQuyetVanDeThuatToan/ThucHanh/lolo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/9.GiaiQuyetVanDeThuatToan/ThucHanh/test01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/9.GiaiQuyetVanDeThuatToan/ThucHanh/test02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/BaiThi/Bai01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/BaiThi/Bai02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/BaiThi/Bai03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/BaiThi/Bai04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01/BaiThi/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module02/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module02/.idea/Module02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module02/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module02/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task02.html" beforeDir="false" afterPath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task03.html" beforeDir="false" afterPath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task1.html" beforeDir="false" afterPath="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY/MODELU01_TRANMINHTRIEU/#6 HuongDoiTuong/YeuCau06_Task1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01/CauTrucDieuKien/BaiTap/Switch_Case.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/CauTrucDieuKien/BaiTap/Switch_Case.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01/CauTrucDieuKien/ThucHanh/LuyenTapToanTu01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/CauTrucDieuKien/ThucHanh/LuyenTapToanTu01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01/Mang/BaiTap/PracticeWithArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/Mang/BaiTap/PracticeWithArray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/3.CauTrucDieuKien/ThucHanh/KiemTraNam Nhuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/3.CauTrucDieuKien/ThucHanh/KiemTraNam Nhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/4.CauTrucLap/ThucHanh/VongLapLongNhau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/5.Mang/BaiTap/PracticeWithArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/5.Mang/BaiTap/PracticeWithArray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/6.Function_Custom/BaiTap/Practice_02/Bai07.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/6.Function_Custom/BaiTap/Practice_02/Bai07.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01/6.Function_Custom/BaiTap/Practice_02/KiemTraTuDoiXung.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module01/6.Function_Custom/BaiTap/Practice_02/KiemTraTuDoiXung.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,46 +56,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="460" />
-    <option name="y" value="160" />
-    <option name="width" value="820" />
-    <option name="height" value="570" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CODEGYM_GIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CODEGYM_GIT" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1VVEva74cCilIgXpKi2FQHO5LJn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CODEGYMDN_CASE_STUDY" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -91,35 +94,21 @@
       <updated>1575612256513</updated>
       <workItem from="1575612257652" duration="11000" />
       <workItem from="1575612301065" duration="12000" />
+      <workItem from="1577330094646" duration="984000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577331003617">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577331003617" />
+    <state x="209" y="33" key="new project wizard" timestamp="1577331015025">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577331015025" />
   </component>
 </project>

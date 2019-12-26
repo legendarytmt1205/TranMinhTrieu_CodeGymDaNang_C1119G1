@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let countOther = 0;
+    arrResult = [];
+
+    function isSymmetry(str) {
+        var rev = str.split("").reverse().join("");
+        return str === rev;
+    }
+
+    function longestString(str) {
+        var maxLength = 0;
+        var maxStr = '';
+        for (var i = 0; i < str.length; i++) {
+            var subStr01 = str.substr(i, str.length);
+
+            for (var j = subStr01.length; j >= 0; j--) {
+                var subStr02 = subStr01.substr(0, j);
+                if (subStr02.length <= 1)
+                    continue;
+                if (isSymmetry(subStr02)) {
+                    if (subStr02.length>=4) {
+                        countOther++;
+                        arrResult.push(subStr02);
+                    }
+                    count++;
+                    if (subStr02.length > maxLength) {
+                        maxLength = subStr02.length;
+                        maxStr = subStr02;
+                    }
+                }
+            }
+        }
+        return maxStr;
+    }
+    document.write("Chuỗi đầu: " + longestString("12321363115653")+"<br/>");
+    document.write("Chuỗi cuối: " + arrResult[arrResult.length-1]+"<br/>");
+    document.write("Số chuỗi đối xứng là: "+count+"<br/>");
+    document.write("Số chuỗi có length lớn hơn hoặc bằng 4 là: "+ countOther);
+</script>
+</body>
+</html>

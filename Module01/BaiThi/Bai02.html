@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập vào số nguyên n"));
+
+    function isMainNumber(n) {
+       let num = Math.sqrt(n);
+        if (parseInt(num) === parseFloat(num)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    alert(isMainNumber(n));
+</script>
+
+</body>
+</html>

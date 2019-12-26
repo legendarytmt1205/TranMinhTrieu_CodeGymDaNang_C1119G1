@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let arrHocSinh = [];
+    let currentAccount = "";
+
+    let HocSinh = function () {
+        this.setSoThuTu = function (soThuTu) {
+            this.soThuTu = soThuTu;
+        };
+        this.getSoThuTu = function () {
+            return this.soThuTu
+        };
+
+        this.setFullName = function (name) {
+            this.name = name;
+        };
+        this.getFullName = function () {
+            return this.name;
+        };
+
+        this.setNgaySinh = function (ngaySinh) {
+            this.ngaySinh = ngaySinh;
+        };
+        this.getNgaySinh = function () {
+            return this.ngaySinh;
+        };
+
+        this.setDiemTrungBinh = function (diemTrungBinh) {
+            this.diemTrungBinh = diemTrungBinh;
+        };
+        this.getDiemTrungBinh = function () {
+            return this.diemTrungBinh;
+        };
+    };
+
+    function showInfo(hocSinh) {
+        alert("Số thứ tự: " + hocSinh.getSoThuTu() + "\n"
+            + "Họ và tên: " + hocSinh.getFullName() + "\n"
+            + "Ngày sinh: " + hocSinh.getNgaySinh() + "\n"
+            + "Điểm trung bình: " + hocSinh.getDiemTrungBinh())
+    }
+
+    function kiemTrahocLucHocSinh(hocSinh) {
+        let dtb = hocSinh.getDiemTrungBinh();
+        if (dtb > 8) {
+            alert("Học sinh giỏi");
+        } else if (dtb < 8 && dtb >= 6.5) {
+            alert("Học sinh khá");
+        } else if (dtb < 6.5 && dtb >= 5) {
+            alert("Học sinh trung bình");
+        } else if (dtb < 5 && dtb >= 3.5) {
+            alert("Học sinh yếu");
+        } else {
+            alert("Học sinh kém");
+        }
+    }
+
+    let hocSinh = new HocSinh();
+    hocSinh.setSoThuTu(8);
+    hocSinh.setFullName("trieu");
+    hocSinh.setNgaySinh("12/05/1990");
+    hocSinh.setDiemTrungBinh(8.8);
+
+    showInfo(hocSinh);
+    kiemTrahocLucHocSinh(hocSinh);
+
+</script>
+
+</body>
+</html>
