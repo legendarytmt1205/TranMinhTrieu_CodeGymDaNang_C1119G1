@@ -1,8 +1,10 @@
 package ClassAndObject.BaiTap;
 
-import java.util.Date;
+import ClassAndObject.ThucHanh.RandomValue;
 
-public class StopWatch {
+import java.time.LocalTime;
+
+ public class StopWatch {
 
     private Long startTime;
     private Long endTimer;
@@ -19,9 +21,18 @@ public class StopWatch {
         return endTimer;
     }
 
-
-    public static void main(String[] args) {
-        StopWatch stopWatch = new StopWatch();
-
+    public void start() {
+        this.startTime = System.currentTimeMillis();
     }
-}
+
+    public void stop() {
+        this.endTimer = System.currentTimeMillis();
+    }
+     public double elapsedTime() {
+         return (endTimer - startTime) / 1000.0;
+     }
+
+     public static void main(String[] args) {
+         RandomValue randomValue = new RandomValue();;
+     }
+ }

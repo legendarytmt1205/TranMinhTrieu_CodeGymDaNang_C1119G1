@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="button" id ="a" onclick="myFunction()">
+    <input type="text" id="number" placeholder="nhập number">
+    <p><b>Number of degrees converted: <span id="convertedAmount"></span></b></p>
+</form>
+<script>
+    function myFunction() {
+        let number = document.getElementById("number").value;
+        let number1 = (number - 32) / 1.8;
+        document.getElementById("convertedAmount").innerHTML = number1;
+    }
+</script>
+</body>
+</html>

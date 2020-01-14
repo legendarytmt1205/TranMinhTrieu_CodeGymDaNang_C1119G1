@@ -26,6 +26,8 @@ public class ReverseArray {
             i++;
         }
 
+        //ReverseArray reverseArray = new ReverseArray();
+        //reverseArray.reverse(array);
         reverse(array);
     }
     public static void reverse(double array[]) {

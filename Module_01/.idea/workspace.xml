@@ -2,22 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29dd2a8b-60ed-4689-a069-790521d7aa42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Module02/Java_code/Java_languege/src/FindValueInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaLanguage/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/.idea/libraries/org_apache_commons_commons_csv_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Commons/FuncWriteAndReadFileCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Commons/ValidateData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/FunctionGeneral/GeneratorID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Libs/MyList/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/ColorableBT/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/ColorableBT/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/ColorableBT/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/ColorableBT/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/InterfaceResizeable/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/InterfaceResizeable/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/InterfaceResizeable/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/InterfaceResizeable/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/InterfaceResizeable/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/BaiTap/InterfaceResizeable/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Chicken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/AdvancedObjectOrientedDesign/ThucHanh/AnimalAndEdible/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/BaiTap/StopWacth02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/ThucHanh/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/ThucHanh/RandomValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/ThucHanh/SelectionSortExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/BaiTap/ArrayList/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/BaiTap/ArrayList/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/BaiTap/LinkedList/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/BaiTap/LinkedList/MyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/ThucHanh/ClassListBasic/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/ThucHanh/ClassListBasic/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/ThucHanh/LinkedListBasic/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/CollectionsInJava/ThucHanh/LinkedListBasic/MyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/CircleAndCylinder/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/CircleAndCylinder/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/CircleAndCylinder/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/Point2DAndPoint3D/MainD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/Point2DAndPoint3D/Point2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/Point2DAndPoint3D/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/TriangleE/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/BaiTap/TriangleE/TriangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/ThucHanh/DoiTuongHinhHoc/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/ThucHanh/DoiTuongHinhHoc/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/ThucHanh/DoiTuongHinhHoc/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/ThucHanh/DoiTuongHinhHoc/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module_02/src/Inheritance/ThucHanh/DoiTuongHinhHoc/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/FuramaResort.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/FuramaResort.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Commons/FuncWriteFileCSV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Models/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Models/Villa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Views/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/out/production/FuramaResort/Views/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Commons/FuncWriteFileCSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Views/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEGYMDN_CASE_STUDY/FuramaResort/src/Views/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Module02/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/1.JavaLanguage/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/1.JavaLanguage/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/1.JavaLanguage/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/1.JavaLanguage/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/1.JavaLanguage/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/1.JavaLanguage/JavaLanguage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/2.ArrayAndMethod/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/2.ArrayAndMethod/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/2.ArrayAndMethod/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/2.ArrayAndMethod/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/2.ArrayAndMethod/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module02/2.ArrayAndMethod/ArrayAndMethod.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_02/out/production/Module_02/ClassAndObject/ThucHanh/HinhChuNhat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_02/out/production/Module_02/ClassAndObject/ThucHanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_02/out/production/Module_02/ClassAndObject/ThucHanh/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_02/out/production/Module_02/arrayMethod/thucHanh/ReverseArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_02/out/production/Module_02/arrayMethod/thucHanh/ReverseArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/BaiTap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/BaiTap/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/ThucHanh/HinhChuNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_02/src/ClassAndObject/ThucHanh/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_02/src/arrayMethod/thucHanh/ReverseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_02/src/arrayMethod/thucHanh/ReverseArray.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +82,17 @@
     <favorites_list name="Module01" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BaiThi/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +110,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BaiThi/demo.html" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
     <option name="y" value="125" />
@@ -65,39 +132,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module01" type="462c0819:PsiDirectoryNode" />
+              <item name="Module_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module_01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module01" type="462c0819:PsiDirectoryNode" />
-              <item name="4.CauTrucLap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module01" type="462c0819:PsiDirectoryNode" />
-              <item name="4.CauTrucLap" type="462c0819:PsiDirectoryNode" />
-              <item name="BaiTap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module01" type="462c0819:PsiDirectoryNode" />
-              <item name="5.Mang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module01" type="462c0819:PsiDirectoryNode" />
-              <item name="6.Function_Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="Module_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module_01" type="462c0819:PsiDirectoryNode" />
+              <item name="BaiThi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -134,15 +185,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.demo.html">
     <configuration name="SoNguyenTo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63343/Module01/4.CauTrucLap/BaiTap/SoNguyenTo.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3">
       <method v="2" />
     </configuration>
+    <configuration name="demo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63343/Module_01/BaiThi/demo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.demo.html" />
         <item itemvalue="JavaScript Debug.SoNguyenTo.html" />
       </list>
     </recent_temporary>
@@ -296,11 +351,13 @@
       <workItem from="1577329839890" duration="253000" />
       <workItem from="1577372287665" duration="4000" />
       <workItem from="1577410345100" duration="2740000" />
+      <workItem from="1577976553511" duration="113000" />
+      <workItem from="1578542821776" duration="1696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2744000" />
+    <option name="totallyTimeSpent" value="4553000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,8 +370,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -359,6 +417,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.GiaiQuyetVanDeThuatToan/BaiTapOnTap/Bai12.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.GiaiQuyetVanDeThuatToan/BaiTapOnTap/Bai10.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.GiaiQuyetVanDeThuatToan/BaiTapOnTap/Bai11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiThi/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
