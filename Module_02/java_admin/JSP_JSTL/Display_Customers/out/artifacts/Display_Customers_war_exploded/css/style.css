@@ -1,0 +1,23 @@
+
+.container {
+    text-align: center;
+}
+
+.table {
+    width: 800px;
+}
+
+.th {
+    background-color: aquamarine;
+    /*padding: 10px;*/
+}
+
+#h2 {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.body {
+    text-align: center;
+}
+

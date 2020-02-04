@@ -5,11 +5,11 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>ServerTime_ServletNew</servlet-name>
-        <servlet-class>ServerTime_ServletNew</servlet-class>
+        <servlet-name>ServerTime</servlet-name>
+        <servlet-class>ServerTimeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ServerTime_ServletNew</servlet-name>
+        <servlet-name>ServerTime</servlet-name>
         <url-pattern>/tmt</url-pattern>
     </servlet-mapping>
 </web-app>

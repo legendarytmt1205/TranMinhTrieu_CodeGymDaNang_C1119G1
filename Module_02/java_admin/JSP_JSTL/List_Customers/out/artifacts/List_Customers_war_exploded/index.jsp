@@ -11,30 +11,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <style>
-        .container{
-            text-align: center;
-            margin: 100px auto;
-        }
-        .table{
-            width: 800px;
-            margin: 20px auto;
-        }
-        .th{
-            background-color: aquamarine;
-            padding: 10px;
-        }
-        #h2{
-            text-transform: uppercase;
-            color:crimson;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <%
     List<Customer> list = Customer.getCustomers();
-    request.setAttribute("abc",list);
+    request.setAttribute("tmt", list);
 %>
+
 <div class="container">
     <h2 id="h2">Danh Sách Khách Hàng</h2>
     <br/>
@@ -44,14 +28,16 @@
             <th class="th">Họ Tên</th>
             <th class="th">Ngày Sinh</th>
             <th class="th">Địa Chỉ</th>
+            <th class="th">Hình Ảnh</th>
         </tr>
         </thead>
-        <tbody>
-        <c:forEach var="customer" items="${abc}">
+        <tbody class="body">
+        <c:forEach var="customer" items="${tmt}">
             <tr>
                 <td><c:out value="${customer.name}"/></td>
-                <td><c:out value="${customer.birthday()}"/></td>
-                <td><c:out value="${customer.address()}"/></td>
+                <td><c:out value="${customer.birthday}"/></td>
+                <td><c:out value="${customer.address}"/></td>
+                <td class="td"><img class="img" src="<c:out value="${customer.image}" />"/></td>
             </tr>
         </c:forEach>
         </tbody>

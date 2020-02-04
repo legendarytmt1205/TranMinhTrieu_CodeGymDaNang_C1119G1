@@ -1,0 +1,29 @@
+
+.container {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.table {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.th {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+#h2 {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.img {
+    width: 300px;
+    height: 180px;
+}
+
+.body {
+    text-align: center;
+}

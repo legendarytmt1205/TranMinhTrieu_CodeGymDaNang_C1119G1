@@ -7,6 +7,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="List_Customers" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="org.apache.taglibs:taglibs-standard-spec:1.2.5" />
+          <element id="library" level="project" name="org.apache.taglibs:taglibs-standard-impl:1.2.5" />
+        </element>
       </element>
     </root>
   </artifact>

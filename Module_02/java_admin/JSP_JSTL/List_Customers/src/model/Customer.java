@@ -12,12 +12,12 @@ public class Customer {
 
     static {
         list = new ArrayList<>();
-        list.add(new Customer("Trieu", "12/05/2000", "QN"));
-        list.add(new Customer("Trieu", "12/05/2000", "QN"));
-        list.add(new Customer("Trieu", "12/05/2000", "QN"));
-        list.add(new Customer("Trieu", "12/05/2000", "QN"));
-        list.add(new Customer("Trieu", "12/05/2000", "QN"));
-        list.add(new Customer("Trieu", "12/05/2000", "QN"));
+        list.add(new Customer("Trieu", "12/05/2000", "QN","img/countryside1.jfif"));
+        list.add(new Customer("Trieu", "12/05/2000", "QN","img/countryside2.jfif"));
+        list.add(new Customer("Trieu", "12/05/2000", "QN","img/countryside3.jfif"));
+        list.add(new Customer("Trieu", "12/05/2000", "QN","img/countryside4.jfif"));
+        list.add(new Customer("Trieu", "12/05/2000", "QN","img/countryside5.jfif"));
+        list.add(new Customer("Trieu", "12/05/2000", "QN","img/countryside6.jfif"));
     }
     public Customer() {
 
