@@ -11,13 +11,14 @@
 <head>
     <title>Products List</title>
     <style>
-        table{
+        table {
             width: 900px;
             height: 200px;
             text-align: center;
             background-color: antiquewhite;
         }
-        .head{
+
+        .head {
             background-color: aquamarine;
         }
     </style>
@@ -39,13 +40,15 @@
     <c:forEach items='${requestScope["products"]}' var="product">
         <tr>
             <td title="Display Information Product">product
-                <a href="#">${product.productName}</a>
+                <a href="/products?action=view&id=${product.getProductId()}">${product.productName}</a>
             </td>
             <td>${product.productPrice}</td>
             <td>${product.productDesc}</td>
             <td>${product.supplier}</td>
-            <td title="Edit Information Product"><a href="#">edit</a></td>
-            <td title="Delete Information Product"><a href="#">delete</a></td>
+            <td title="Edit Information Product"><a href="/products?action=edit&id=${product.getProductId()}">Edit</a>
+            </td>
+            <td title="Delete Information Product"><a
+                    href="/products?action=delete&id=${product.getProductId()}">Delete</a></td>
         </tr>
     </c:forEach>
 </table>
