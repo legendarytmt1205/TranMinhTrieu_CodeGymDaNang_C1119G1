@@ -1,13 +1,14 @@
-package com.codegym.cms.service.impl;
+package com.tmt.customer.service.impl;
 
-import com.codegym.cms.model.Customer;
-import com.codegym.cms.repository.CustomerRepository;
-import com.codegym.cms.service.CustomerService;
+import com.tmt.customer.model.Customer;
+import com.tmt.customer.repository.CustomerRepository;
+import com.tmt.customer.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import java.util.List;
 
-public class CustomerServiceImpl implements CustomerService{
+@Service
+public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     private CustomerRepository customerRepository;
@@ -15,7 +16,6 @@ public class CustomerServiceImpl implements CustomerService{
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
-
     }
 
     @Override

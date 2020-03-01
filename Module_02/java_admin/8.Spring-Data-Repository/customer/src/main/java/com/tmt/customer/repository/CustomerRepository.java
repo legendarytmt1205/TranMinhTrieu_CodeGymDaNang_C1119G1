@@ -1,9 +1,7 @@
-package com.codegym.cms.repository;
+package com.tmt.customer.repository;
 
-import com.codegym.cms.model.Customer;
-
-import java.util.List;
+import com.tmt.customer.model.Customer;
 
 public interface CustomerRepository extends Repository<Customer> {
-//    List<Customer> danhsach();
+
 }

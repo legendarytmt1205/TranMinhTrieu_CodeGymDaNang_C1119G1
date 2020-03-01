@@ -1,11 +1,9 @@
-package com.codegym.cms.repository.impl;
+package com.tmt.customer.repository.impl;
 
-import com.codegym.cms.model.Customer;
-import com.codegym.cms.repository.CustomerRepository;
-import com.codegym.cms.service.CustomerService;
-import com.codegym.cms.service.impl.CustomerServiceImpl;
+import com.tmt.customer.model.Customer;
+import com.tmt.customer.repository.CustomerRepository;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
@@ -13,8 +11,8 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Transactional
+@Repository
 public class CustomerRepositoryImpl implements CustomerRepository {
-
 
     @PersistenceContext
     private EntityManager em;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+                      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sach khach hang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h3>List Customers</h3>
+<form action="/">
+    <input type="text" name="name" class="form-group">
+    <input type="submit" value="Search">
+</form>
+<a href="/create">Them moi khach hang</a>
+<table class="table table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Dia Chi</th>
+        <th>Action</th>
+    </tr>
+    <th:block th:each="cus : ${listCustomer}">
+        <tr>
+            <td th:text="${cus.name}"></td>
+            <td th:text="${cus.address}"></td>
+            <td>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+            </td>
+        </tr>
+    </th:block>
+
+</table>
+
+<div>
+    <a th:href="@{'/'(page=${listCustomer.number - 1},name=${name})}" th:if="${listCustomer.hasPrevious()}">Previous</a>
+    <span th:text="${listCustomer.number + 1}"></span>/<span th:text="${listCustomer.totalPages}"></span>
+    <a th:href="@{'/'(page=${listCustomer.number + 1},name=${name})}" th:if="${listCustomer.hasNext()}">Next</a>
+</div>
+</body>
+</html>

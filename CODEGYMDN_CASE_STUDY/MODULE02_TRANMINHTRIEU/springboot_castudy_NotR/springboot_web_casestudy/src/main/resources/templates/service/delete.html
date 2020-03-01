@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<h2>Delete Service</h2>
+<p>
+    <a th:href="@{/admin/service}">
+        Back To Service List
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/admin/service/delete}" th:object="${service}"
+          method="POST" novalidate="novalidate">
+        <input th:type="hidden" name="id" th:field="*{id}">
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{serviceName}"/>
+        </div>
+        <div>
+            <label>Status</label>
+            <input type="text" th:field="*{service_status}"/>
+        </div>
+        <input type="submit" value="delete"></input>
+    </form>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

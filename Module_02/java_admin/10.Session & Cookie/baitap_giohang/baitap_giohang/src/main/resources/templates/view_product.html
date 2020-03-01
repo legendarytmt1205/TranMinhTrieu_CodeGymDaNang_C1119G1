@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<h3>Edit Product</h3>
+<p>
+    <a th:href="@{/}">
+        Back to product list
+    </a>
+</p>
+<div class="father">
+<div id="form">
+    <form th:action="@{/product/giohang}" th:object="${productV}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <img  th:src="*{image}" style="width: 300px;height: 200px"/>
+        </div>
+        <div hidden>
+            <label>Price</label>
+            <p type="text" th:text="*{productName}">
+        </div>
+        <div hidden>
+            <label>Price</label>
+            <p type="text" th:text="*{description}">
+        </div>
+        <div hidden>
+            <label>Price</label>
+            <p type="text" th:text="*{madeIn}">
+        </div>
+        <div>
+            <label>Price</label>
+            <p type="text" th:text="*{money}">
+        </div>
+        <input type="submit" value="Buy Now"></input>
+    </form>
+
+</div>
+
+<div class="description">
+        <p>Sản phẩm :<p></p><p th:text="${productV.getProductName()}"></p><br>
+    <p  id="decripT" th:text="${productV.getDescription()}"></p>
+</div>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

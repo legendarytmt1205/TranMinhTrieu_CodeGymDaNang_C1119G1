@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ShopCart_Demo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ShopCart_Demo_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ShopCart_Demo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ShopCart_Demo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="org.apache.taglibs:taglibs-standard-spec:1.2.5" />
+          <element id="library" level="project" name="org.apache.taglibs:taglibs-standard-impl:1.2.5" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ViewBlog</title>
+</head>
+<body>
+<a href="/create-blog">CreateBlog</a>
+<a href="/category">Category List</a>
+<h1>Blog</h1>
+<form>
+    Search by Name:
+    <input name="s" type="text">
+    <input type="submit" value="Search">
+</form>
+<table>
+    <tr>
+        <th>NameBlog</th>
+        <th>idBlog</th>
+        <th>Context</th>
+        <th>Tacgia</th>
+        <th>Category</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="blog : ${blogs}">
+        <tr>
+            <td th:text="${blog.name}"></td>
+            <td th:text="${blog.idBlog}"></td>
+            <td th:text="${blog.context}"></td>
+            <td th:text="${blog.tacgia}"></td>
+            <td th:text="${blog.category.getName()}"></td>
+<!--            <td><a th:href="@{/edit-blog/__${blogs.idBlog}__ }">Edit</a></td>-->
+<!--            <td><a th:href="@{/delete-blog/__${blogs.idBlog}__ }">Delete</a></td>-->
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+</head>
+<body>
+<h3>List Product</h3>
+<p>
+    <a th:href="@{/}">
+        back to homePage
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<table id="products">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${giohang.getProductList()}">
+        <th th:text="${rowStat.index + 1}"></th>
+        <td th:text="${row.getProductName()}"></td>
+        <td class="tagImg" style="position: relative; left: 0; top: 0;">
+            <div class="deleteItem"><a th:href="@{/product/{id}/delete(id=${row.getId()})}"></a><img
+                    th:src="@{https://www.bing.com/images/blob?bcid=S7BvzAD7sgEB8Iia.KFm76B5ca1e.....-E}"/></div>
+            <div class="itemProduct"><img th:src="${row.getImage()}" style="width: 300px;height: 200px"></div>
+
+        </td>
+        <td><p>Amount</p><select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

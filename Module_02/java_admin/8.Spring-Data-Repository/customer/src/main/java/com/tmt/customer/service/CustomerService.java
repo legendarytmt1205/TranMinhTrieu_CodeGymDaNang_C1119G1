@@ -1,8 +1,6 @@
-package com.codegym.cms.service;
+package com.tmt.customer.service;
 
-import com.codegym.cms.model.Customer;
-import com.codegym.cms.repository.CustomerRepository;
-import com.codegym.cms.repository.Repository;
+import com.tmt.customer.model.Customer;
 
 import java.util.List;
 

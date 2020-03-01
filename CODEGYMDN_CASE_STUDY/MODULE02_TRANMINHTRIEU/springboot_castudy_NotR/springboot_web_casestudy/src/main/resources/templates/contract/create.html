@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<h2>Add New Contract</h2>
+<p>
+    <a th:href="@{/admin}">
+        Back To Home
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/admin/contract/create}" th:object="${contract}"
+          method="POST" novalidate="novalidate">
+        <div>
+            <label>Start Day</label>
+            <input type="date" datefomat = "d M y" th:field="*{contractDay}"/>
+        </div>
+        <div>
+            <label>End Day</label>
+            <input type="date" datefomat = "d M y" th:field="*{contractEndDay}"/>
+        </div>
+        <div>
+            <label>Deposit</label>
+            <input type="text" th:field="*{deposit}"/>
+        </div>
+        <div>
+            <label>Total</label>
+            <input type="text" th:field="*{total}"/>
+        </div>
+
+        <td>Employee Create</td>
+        <td>
+            <select th:field="*{employee}">
+                <option th:each="u : ${employees}" th:value="${u.id}" th:text="${u.fullName}"></option>
+            </select>
+        </td>
+
+        <td>Service</td>
+        <td>
+            <select th:field="*{services}">
+                <option th:each="u : ${services}" th:value="${u.id}" th:text="${u.serviceName}"></option>
+            </select>
+        </td>
+
+        <td>Customer</td>
+        <td>
+            <select th:field="*{customer}">
+                <option th:each="u : ${customers}" th:value="${u.id}" th:text="${u.fullName}"></option>
+            </select>
+        </td>
+
+        <input type="submit" value="Save" ></input>
+    </form>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

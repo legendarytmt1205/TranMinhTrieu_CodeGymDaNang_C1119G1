@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<h2>Add Service</h2>
+<p>
+    <a th:href="@{/admin/service}">
+        Back To Service List
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/admin/service/create}" th:object="${service}"
+          method="POST" novalidate="novalidate">
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{serviceName}"/>
+        </div>
+        <div>
+            <label>Status</label>
+            <input type="text" th:field="*{service_status}"/>
+        </div>
+        <div>
+            <label>Area Used</label>
+            <input type="text" th:field="*{area_used}"/>
+        </div>
+        <div>
+            <label>Number Floors</label>
+            <input type="text" th:field="*{number_floors}"/>
+        </div>
+        <div>
+            <label>Number People</label>
+            <input type="email" th:field="*{number_max_people}"/>
+        </div>
+        <div>
+            <label>Rental Cost</label>
+            <input type="text" th:field="*{rental_costs}"/>
+        </div>
+        <td>Type Rent</td>
+        <td>
+            <select th:field="*{typeRent}">
+                <option th:each="u : ${typeRents}" th:value="${u.id}" th:text="${u.type_rent_name}"></option>
+            </select>
+        </td>
+        <td>Type Services</td>
+        <td>
+            <select th:field="*{typeServices}">
+                <option th:each="u : ${typeServices}" th:value="${u.id}" th:text="${u.type_services_name}"></option>
+            </select>
+        </td>
+
+        <input type="submit" value="Save" ></input>
+    </form>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

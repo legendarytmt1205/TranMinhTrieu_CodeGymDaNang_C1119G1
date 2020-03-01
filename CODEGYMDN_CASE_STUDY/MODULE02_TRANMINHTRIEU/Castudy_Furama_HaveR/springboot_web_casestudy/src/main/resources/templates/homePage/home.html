@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>TMT</title>
+    <style>
+        .container-fluid .dropdown {
+            margin-right: 30px;
+        }
+
+        .pull-top {
+            margin-top: 10px;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="height: auto">
+    <header class="row">
+        <img class="pull-right" src="imgHomePage/logo.jfif">
+        <div class="shopping-mall">
+            <h1>Welcome To Furama Resort</h1>
+            <h5 style="text-align: center">Vietnam's number one resort system</h5>
+        </div>
+    </header>
+    <!--    navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.youtube.com/" target="_blank">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" onclick="showAndHide()">Searchs</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="formSearch" >
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <a href="#">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </a>
+            </form>
+        </div>
+    </nav>
+
+    <!--    end navbar-->
+    <!--    title-->
+    <div class="row">
+        <div class="col-md-3">
+           <h4></h4>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <p style="">A listing of 101 of the best catchy resort slogans to make you desire a vacation.
+                    Whether it be on the coast or a cruise,
+                    these taglines promise moments of relaxation and worry free rest.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+    <!--   product loop-->
+    <div class="row">
+        <div class="col-md-2 collapse show d-md-flex pt-2 pl-0 min-vh-100 bg-dark" id="sidebar">
+            <ul class="nav flex-column flex-nowrap overflow-hidden" style="width: 100%">
+
+                <li class="nav-item" style="width: 100%">
+                    <a class="nav-link collapsed text-truncate" href="/admin/customer">
+                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Customers</span>
+                    </a>
+
+                    <a class="nav-link collapsed text-truncate" href="/admin/service">
+                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Services</span>
+                    </a>
+
+                    <a class="nav-link collapsed text-truncate" href="/admin/contract">
+                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Contracts</span>
+                    </a>
+
+                    <a class="nav-link collapsed text-truncate" href="/admin/contractDetail">
+                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">ContractDetails</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/villa1.jfif"></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/house1.jfif"></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/room1.jfif"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/villa2.jfif"></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/house2.jfif"></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/room2.jfif"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/villa3.jfif"></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/house3.jfif"></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="pull-top" width="100%" src="imgHomePage/room3.jfif"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2 bg-dark" >
+            <div>
+                <a class="nav-link collapsed text-truncate" href="#">
+                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Register Service</span>
+                </a>
+            </div>
+            <div>
+                <a class="nav-link collapsed text-truncate" href="#">
+                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Show Customers</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="panel panel-default">
+        <div class="panel-heading text-center">
+            <p>@Trần Minh Triều</p>
+        </div>
+    </footer>
+</div>
+
+
+<script>
+    let flag;
+    function showAndHide() {
+        flag = !flag;
+        flag?$("#formSearch").show():$("#formSearch").hide();
+    }
+    showAndHide();
+</script>
+</body>
+</html>

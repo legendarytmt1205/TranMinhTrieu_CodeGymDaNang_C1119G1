@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<a href="/admin" style="text-decoration: none"><h2>Customers</h2></a>
+<form action="/admin/customer">
+    <input type="text" name="name" class="form-group" placeholder="Enter Name You Want to Search">
+    <input type="submit" value="Search">
+</form>
+<p>
+    <a th:href="@{/admin/customer/create}">
+        Add new customer
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Full Name</th>
+        <th>BirthDay</th>
+        <th>IDCard</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Type Customer</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${listCustomer}">
+        <td th:text="${row.getFullName()}"></td>
+        <td th:text="${#dates.format(row.getBirthday(),'dd/MM/yyyy')}"></td>
+        <td th:text="${row.getId_card()}"></td>
+        <td th:text="${row.getPhone_number()}"></td>
+        <td th:text="${row.getEmail()}"></td>
+        <td th:text="${row.getAddress()}"></td>
+        <td th:text="${row.getTypeCustomer().type_customer_name}"></td>
+        <td><a th:href="@{/admin/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/admin/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/admin/customer/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{'/admin/customer'(page=${listCustomer.number - 1},name=${name})}" th:if="${listCustomer.hasPrevious()}">Back</a>
+    <span th:text="${listCustomer.number + 1}"></span>/<span th:text="${listCustomer.totalPages}"></span>
+    <a th:href="@{'/admin/customer'(page=${listCustomer.number + 1},name=${name})}" th:if="${listCustomer.hasNext()}">Next</a>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

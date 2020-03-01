@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/com/aptech/controller/CartServlet.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/web/products.jsp</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/entity/ItemCart.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/com/aptech/controller/RegisterServlet.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/entity/User.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/com/aptech/controller/LoginServlet.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/entity/Product.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/com/aptech/controller/ProductServlet.java</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/web/cart.jsp</file>
+            <file>file:/D:/Aptech/Login_Register_byServlet/src/java/com/aptech/ulti/MSSQLConnection.java</file>
+        </group>
+    </open-files>
+</project-private>

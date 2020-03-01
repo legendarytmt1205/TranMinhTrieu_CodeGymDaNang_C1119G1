@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<a href="/admin" style="text-decoration: none"><h2>Services</h2></a>
+<form action="/admin/service">
+    <input type="text" name="name" class="form-group" placeholder="Enter Name You Want to Search">
+    <input type="submit" value="Search">
+</form>
+<p>
+    <a th:href="@{/admin/service/create}">
+        Add New Service
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Area Used</th>
+        <th>Number Floors</th>
+        <th>Number People</th>
+        <th>Rental Cost</th>
+        <th>Type Rent</th>
+        <th>Type Services</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${listService}">
+        <td th:text="${row.getServiceName()}"></td>
+        <td th:text="${row.getService_status()}"></td>
+        <td th:text="${row.getArea_used()}"></td>
+        <td th:text="${row.getNumber_floors()}"></td>
+        <td th:text="${row.getNumber_max_people()}"></td>
+        <td th:text="${row.getRental_costs()}"></td>
+        <td th:text="${row.getTypeRent().getType_rent_name()}"></td>
+        <td th:text="${row.getTypeServices().getType_services_name()}"></td>
+        <td><a th:href="@{/admin/service/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/admin/service/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/admin/service/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{'/admin/service'(page=${listService.number - 1},name=${name})}" th:if="${listService.hasPrevious()}">Back</a>
+    <span th:text="${listService.number + 1}"></span>/<span th:text="${listService.totalPages}"></span>
+    <a th:href="@{'/admin/service'(page=${listService.number + 1},name=${name})}" th:if="${listService.hasNext()}">Next</a>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>
