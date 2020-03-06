@@ -108,12 +108,12 @@ Create Table `db_furama_resort`.contract_details (
 );  
 
 
-Create Table `db_furama_resort`.roles (
+Create Table `db_furama_resort`.role (
     role_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name nvarchar(50)
 );
 
-Create Table `db_furama_resort`.users (
+Create Table `db_furama_resort`.user (
     user_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email nvarchar(50),
 	password nvarchar(50)
