@@ -9,6 +9,8 @@ import vn.tmt.springboot_web_casestudy.entity.Customer;
 import vn.tmt.springboot_web_casestudy.repository.CustomerRepository;
 import vn.tmt.springboot_web_casestudy.service.CustomerService;
 
+import java.util.List;
+
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
@@ -38,5 +40,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Page<Customer> findAllByNameContaining(String name, Pageable pageable) {
         return customerRepository.findAllByFullNameContaining(name,pageable);
+    }
+
+    @Override
+    public List<Customer> getALlCustomerFromContractExist() {
+        return customerRepository.getALlCustomerFromContractExist();
     }
 }

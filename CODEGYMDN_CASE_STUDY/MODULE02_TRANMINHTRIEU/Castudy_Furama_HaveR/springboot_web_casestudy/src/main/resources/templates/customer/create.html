@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="layout :: head">
-<!--    <th:block th:insert="layout :: head">-->
-<!--    </th:block>-->
+    <!--    <th:block th:insert="layout :: head">-->
+    <!--    </th:block>-->
 </head>
 <body>
 <h2>Add Customer</h2>
@@ -21,11 +21,10 @@
             <label>Name</label>
             <p th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}"></p>
             <input type="text" th:field="*{fullName}"/>
-
         </div>
         <div>
             <label>Birthday</label>
-            <p th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"></p>
+            <p th:if="${#fields.hasErrors('birthday')}" th:text="#{customer.birthday}"></p>
             <input id="datepicker" type="text" th:field="*{birthday}">
         </div>
         <div>

@@ -1,33 +1,49 @@
 package vn.tmt.springboot_web_casestudy.entity;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.NumberFormat;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Positive;
 import java.util.Date;
 import java.util.List;
 
 @Entity
 @Table(name = "contracts")
-public class Contract {
+public class Contract implements Validator {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "contract_id")
     private Long id;
 
+
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     @Column(name = "contract_date")
     private Date contractDay;
 
+    //    @NotNull(message = "Ngày kết thúc không được để trống")
+    //@Pattern(regexp = "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$")
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     @Column(name = "contract_date_end")
     private Date contractEndDay;
 
-    //@Pattern(regexp = "\\d{1,3}[,\\.]?(\\d{1,2})?", message = "Tiền đặt phải là số dương")
+    //@Pattern(regexp = "^(\\d*\\.)?\\d+$", message = "Tiền đặt phải là số dương")
+    @Positive(message = "Tiền đặt cọc phải là số dương")
+    //@NumberFormat(style = NumberFormat.Style.CURRENCY)
+    @NotNull(message = "vui lòng nhập số tiền")
     @Column(name = "deposit")
     private Double deposit;
 
-   // @Pattern(regexp = "\\d{1,3}[,\\.]?(\\d{1,2})?", message = "Tổng tiền phải là số dương")
+    //@Pattern(regexp = "^(\\d*\\.)?\\d+$", message = "Tổng tiền phải là số dương")
+    @Positive(message = "Tổng tiền phải là số dương")
+    //@NumberFormat(style = NumberFormat.Style.CURRENCY))
+    @NotNull(message = "vui lòng nhập số tiền")
     @Column(name = "total")
     private Double total;
 
@@ -43,7 +59,7 @@ public class Contract {
     @JoinColumn(name = "employee_id")
     private Employee employee;
 
-    @OneToMany(targetEntity = ContractDetail.class, mappedBy = "contract",cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = ContractDetail.class, mappedBy = "contract", cascade = CascadeType.ALL)
     private List<ContractDetail> contractDetails;
 
     public Contract() {
@@ -120,5 +136,23 @@ public class Contract {
 
     public void setContractDetails(List<ContractDetail> contractDetails) {
         this.contractDetails = contractDetails;
+    }
+
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return Contract.class.isAssignableFrom(clazz);
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        Contract contract = (Contract) target;
+        if (contract.getContractDay() == null || contract.getContractEndDay() == null
+                || contract.getContractDay().compareTo(contract.getContractEndDay()) > 0
+                || contract.getContractEndDay().compareTo(new java.util.Date()) > 0)
+        {
+            errors.rejectValue("contractDay", "contract.startDay");
+            errors.rejectValue("contractEndDay", "contract.EndDay");
+        }
     }
 }

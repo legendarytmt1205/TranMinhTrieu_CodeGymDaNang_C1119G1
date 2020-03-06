@@ -5,10 +5,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import vn.tmt.springboot_web_casestudy.entity.*;
 import vn.tmt.springboot_web_casestudy.service.*;
+import vn.tmt.springboot_web_casestudy.validation.ContractValidator;
 
 import javax.validation.Valid;
 
@@ -49,7 +51,8 @@ public class ContractController {
     }
 
     @PostMapping("admin/contract/create")
-    public ModelAndView createContract(@Valid @ModelAttribute(name = "contract") Contract contract, BindingResult bindingResult){
+    public ModelAndView createContract(@Validated Contract contract, BindingResult bindingResult){
+        new Contract().validate(contract,bindingResult);
         if (bindingResult.hasErrors()) {
             return new ModelAndView("contract/create");
         } else {

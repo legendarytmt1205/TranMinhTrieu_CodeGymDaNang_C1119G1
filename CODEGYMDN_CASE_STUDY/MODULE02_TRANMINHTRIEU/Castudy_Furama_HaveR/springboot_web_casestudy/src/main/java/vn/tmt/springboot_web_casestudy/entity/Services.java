@@ -1,5 +1,7 @@
 package vn.tmt.springboot_web_casestudy.entity;
 
+import org.springframework.format.annotation.NumberFormat;
+
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import java.util.List;
@@ -18,22 +20,25 @@ public class Services {
         @Column(name = "service_status")
         private String service_status;
 
+
         @Column(name = "area_used")
         private int area_used;
 
 
         @Pattern(regexp = "^[1-9]+\\d+$", message = "Số tầng phải là số nguyên dương")
+        //@NumberFormat(style = NumberFormat.Style.DEFAULT)
         @Column(name = "number_floors")
         private int number_floors;
 
         @Pattern(regexp = "^[1-9]+\\d+$", message = "Số người phải là số nguyên dương")
+        //@NumberFormat(style = NumberFormat.Style.DEFAULT)
         @Column(name = "number_max_people")
         private int number_max_people;
 
 
-        @Pattern(regexp = "\\d{1,3}[,\\.]?(\\d{1,2})?", message = "Chi phí thuê phải là số dương")
+        //@Pattern(regexp = "\\d{1,3}[,\\.]?(\\d{1,2})?", message = "Chi phí thuê phải là số dương")
         @Column(name = "rental_costs")
-        private int rental_costs;
+        private Double rental_costs;
 
         @ManyToOne
         @JoinColumn(name = "type_rent_id")
@@ -106,11 +111,11 @@ public class Services {
                 this.number_max_people = number_max_people;
         }
 
-        public int getRental_costs() {
+        public Double getRental_costs() {
                 return rental_costs;
         }
 
-        public void setRental_costs(int rental_costs) {
+        public void setRental_costs(Double rental_costs) {
                 this.rental_costs = rental_costs;
         }
 

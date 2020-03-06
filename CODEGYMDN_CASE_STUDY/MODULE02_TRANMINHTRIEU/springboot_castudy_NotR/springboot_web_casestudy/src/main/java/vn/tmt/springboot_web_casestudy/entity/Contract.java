@@ -28,13 +28,13 @@ public class Contract {
     @Column(name = "total")
     private Double total;
 
-//    @ManyToOne
-//    @JoinColumn(name = "customer_id")
-//    private Customer customer;
-//
-//    @ManyToOne
-//    @JoinColumn(name = "service_id")
-//    private Services services;
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
+    @ManyToOne
+    @JoinColumn(name = "service_id")
+    private Services services;
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
@@ -87,21 +87,21 @@ public class Contract {
         this.total = total;
     }
 
-//    public Customer getCustomer() {
-//        return customer;
-//    }
-//
-//    public void setCustomer(Customer customer) {
-//        this.customer = customer;
-//    }
-//
-//    public Services getServices() {
-//        return services;
-//    }
-//
-//    public void setServices(Services services) {
-//        this.services = services;
-//    }
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Services getServices() {
+        return services;
+    }
+
+    public void setServices(Services services) {
+        this.services = services;
+    }
 
     public Employee getEmployee() {
         return employee;

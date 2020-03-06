@@ -44,8 +44,8 @@ public class Customer {
     @JoinColumn(name = "type_customer_id")
     private TypeCustomer typeCustomer;
 
-//    @OneToMany(targetEntity = Contract.class)
-//    private List<Contract> contracts;
+    @OneToMany(targetEntity = Contract.class,mappedBy = "customer",cascade = CascadeType.ALL)
+    private List<Contract> contracts;
 
 
     public Customer() {
@@ -116,13 +116,13 @@ public class Customer {
         this.typeCustomer = typeCustomer;
     }
 
-//    public List<Contract> getContracts() {
-//        return contracts;
-//    }
-//
-//    public void setContracts(List<Contract> contracts) {
-//        this.contracts = contracts;
-//    }
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
+    }
 
     @Override
     public String toString() {

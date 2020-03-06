@@ -8,15 +8,23 @@
         Back To Home
     </a>
 </p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
 <div id="form">
     <form th:action="@{/admin/contract/create}" th:object="${contract}"
           method="POST" novalidate="novalidate">
         <div>
             <label>Start Day</label>
+            <p th:if="${#fields.hasErrors('contractDay')}" th:text="#{contract.startDay}"></p>
+<!--            <div th:each="e:${#fields.errors('contractDay')}">-->
+<!--                <p th:text="${e}"></p>-->
+<!--            </div>-->
             <input type="text" id="datepicker" th:field="*{contractDay}"/>
         </div>
         <div>
             <label>End Day</label>
+            <p th:if="${#fields.hasErrors('contractEndDay')}" th:text="#{contract.EndDay}"></p>
             <input type="text" id="datepicker1" th:field="*{contractEndDay}"/>
         </div>
         <div>

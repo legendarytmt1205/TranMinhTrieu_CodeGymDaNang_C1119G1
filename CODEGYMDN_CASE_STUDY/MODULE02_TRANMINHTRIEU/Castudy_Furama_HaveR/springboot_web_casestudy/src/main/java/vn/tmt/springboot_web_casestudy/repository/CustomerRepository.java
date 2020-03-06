@@ -12,10 +12,16 @@ import java.util.List;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer,Long> {
 
+    //@Query(value = "SELECT c FROM customers c order by c.full_name COLLATE utf8_unicode_ci LIMIT 10",nativeQuery = true)
     Page<Customer> findAll(Pageable pageable);
+
     Page<Customer> findAllByFullNameContaining(String name, Pageable pageable);
 
-//    @Query(("SELECT new com.roytuts.dto.DeptEmpDto(d.name, e.name, e.email, e.address) "
-//            + "FROM Department d INNER JOIN d.employees e"))
-//    List<Customer> getAllCustomerByContract();
+    @Query(value = "select ct.contract_date_end, c.* from customers c \n" +
+            "inner join contracts ct\n" +
+            "on c.customer_id = ct.customer_id\n" +
+            "where datediff(CURRENT_DATE(),ct.contract_date_end) <=0", nativeQuery = true)
+    List<Customer> getALlCustomerFromContractExist();
 }
+
+

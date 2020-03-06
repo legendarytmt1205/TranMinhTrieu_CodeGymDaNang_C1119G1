@@ -1,8 +1,12 @@
 package vn.tmt.springboot_web_casestudy.entity;
+
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Date;
@@ -10,18 +14,18 @@ import java.util.List;
 
 @Entity
 @Table(name = "customers")
-public class Customer {
+public class Customer implements Validator {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
     private Long id;
 
     @NotEmpty(message = "Tên không được để trống")
-    @Size(min = 2, max=30, message = "Length from 2 to 30")
+    @Size(min = 2, max = 30, message = "Length from 2 to 30")
     @Column(name = "full_name")
     private String fullName;
 
-    //@NotEmpty(message = "Birthday không được để trống")
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     @Column(name = "birthday")
     private Date birthday;
@@ -140,5 +144,18 @@ public class Customer {
                 ", address='" + address + '\'' +
                 ", furamaTypeCustomer=" + typeCustomer +
                 '}';
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return Customer.class.isAssignableFrom(clazz);
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        Customer customer = (Customer) target;
+        if (customer.getBirthday() == null) {
+            errors.rejectValue("birthday", "customer.birthday");
+        }
     }
 }

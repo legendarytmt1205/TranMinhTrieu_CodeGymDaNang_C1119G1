@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,6 +64,16 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </a>
             </form>
+<!--            <form class="form-inline my-2 my-lg-0">-->
+<!--                <a th:href="@{/login}">-->
+<!--                    <button class="btn btn-outline-success my-2 my-sm-0">Login/Register</button>-->
+<!--                </a>-->
+<!--            </form>-->
+            <div>
+                <a th:href="@{/login}">
+                    <button class="btn btn-outline-success my-2 my-sm-0">Login/Register</button>
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -87,27 +97,6 @@
     <!--   product loop-->
     <div class="row">
         <div class="col-md-2 collapse show d-md-flex pt-2 pl-0 min-vh-100 bg-dark" id="sidebar">
-            <ul class="nav flex-column flex-nowrap overflow-hidden" style="width: 100%">
-
-                <li class="nav-item" style="width: 100%">
-                    <a class="nav-link collapsed text-truncate" href="/admin/customer">
-                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Customers</span>
-                    </a>
-
-                    <a class="nav-link collapsed text-truncate" href="/admin/service">
-                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Services</span>
-                    </a>
-
-                    <a class="nav-link collapsed text-truncate" href="/admin/contract">
-                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Contracts</span>
-                    </a>
-
-                    <a class="nav-link collapsed text-truncate" href="/admin/contractDetail">
-                        <i class="fa fa-table"></i> <span class="d-none d-sm-inline">ContractDetails</span>
-                    </a>
-                </li>
-
-            </ul>
         </div>
 
         <div class="col-md-8">
@@ -149,12 +138,17 @@
         <div class="col-md-2 bg-dark" >
             <div>
                 <a class="nav-link collapsed text-truncate" href="#">
-                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Register Service</span>
+                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Villa</span>
                 </a>
             </div>
             <div>
                 <a class="nav-link collapsed text-truncate" href="#">
-                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Show Customers</span>
+                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">House</span>
+                </a>
+            </div>
+            <div>
+                <a class="nav-link collapsed text-truncate" href="#">
+                    <i class="fa fa-table"></i> <span class="d-none d-sm-inline">Room</span>
                 </a>
             </div>
         </div>
@@ -167,11 +161,10 @@
     </footer>
 </div>
 
-
 <script>
     let flag;
     function showAndHide() {
-        flag = !flag;
+        flag = false;
         flag?$("#formSearch").show():$("#formSearch").hide();
     }
     showAndHide();

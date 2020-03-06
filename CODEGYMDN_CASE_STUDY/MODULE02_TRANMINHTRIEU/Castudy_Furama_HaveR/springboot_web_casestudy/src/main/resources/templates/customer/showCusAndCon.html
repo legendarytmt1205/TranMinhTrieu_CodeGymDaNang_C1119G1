@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<a href="/admin" style="text-decoration: none"><h2>Home Page</h2></a>
+<br/>
+<br/>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Full Name</th>
+        <th>BirthDay</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>End Date Contracts</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${listCustomer}">
+        <td th:text="${row.getFullName()}"></td>
+        <td th:text="${#dates.format(row.getBirthday(),'dd/MM/yyyy')}"></td>
+        <td th:text="${row.getEmail()}"></td>
+        <td th:text="${row.getAddress()}"></td>
+        <td th:text="${row.contracts.get(0).getContractEndDay()}"></td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>
