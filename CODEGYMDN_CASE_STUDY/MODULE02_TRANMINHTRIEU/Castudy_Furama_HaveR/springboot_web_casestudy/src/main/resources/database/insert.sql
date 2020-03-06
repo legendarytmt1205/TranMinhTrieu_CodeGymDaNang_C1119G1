@@ -71,3 +71,17 @@ values('2019-09-24','2019-10-01','5000000.00',25000000.00,1,3,1),
 
 insert into `db_furama_resort`.contract_details(quantity,contract_id,accompanied_service_id)
 values (3,1,3),(4,6,3),(2,3,2),(5,4,4),(2,1,1),(2,2,1),(2,7,2),(1,7,3);
+
+INSERT INTO `db_furama_resort`.`role` (`role_id`, `name`) VALUES ('3', 'ROLE_ADMIN');
+INSERT INTO `db_furama_resort`.`role` (`role_id`, `name`) VALUES ('3', 'ROLE_USER');
+
+INSERT INTO `db_furama_resort`.`user` (`user_id`, `email`, `password`)
+VALUES ('3', 'tmt@gmail.com', '$2a$10$mEIbCMGnV5g2ws3YlxsiM.JoIkV5fPZ6y1mDqi3qUsI42wCzPQP.C');
+
+INSERT INTO `db_furama_resort`.`user` (`user_id`, `email`, `password`)
+VALUES ('3', 'user@gmail.com', '$2a$10$mEIbCMGnV5g2ws3YlxsiM.JoIkV5fPZ6y1mDqi3qUsI42wCzPQP.C');
+
+INSERT INTO `db_furama_resort`.`user_role` (`user_role_id`, `role_id`, `user_id`)
+VALUES ('1', '1', '1');
+INSERT INTO `db_furama_resort`.`user_role` (`user_role_id`, `role_id`, `user_id`)
+VALUES ('2', '2', '2');

@@ -121,8 +121,8 @@ Create Table `db_furama_resort`.users (
 
 Create Table `db_furama_resort`.user_role (
     user_role_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	role_id INT NOT NULL,
-	user_id INT NOT NULL,
+	role_id INT UNSIGNED NOT NULL,
+	user_id INT UNSIGNED NOT NULL,
 	foreign key(role_id) references roles(role_id),
 	foreign key(user_id) references users(user_id),
 );
