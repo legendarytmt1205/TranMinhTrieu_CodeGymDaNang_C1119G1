@@ -120,6 +120,7 @@ Create Table `db_furama_resort`.users (
 );
 
 Create Table `db_furama_resort`.user_role (
+    user_role_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	role_id INT NOT NULL,
 	user_id INT NOT NULL,
 	foreign key(role_id) references roles(role_id),
