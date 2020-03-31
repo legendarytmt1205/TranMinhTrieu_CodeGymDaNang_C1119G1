@@ -15,7 +15,9 @@ public interface CustomerRepository extends JpaRepository<Customer,Long> {
     //@Query(value = "SELECT c FROM customers c order by c.full_name COLLATE utf8_unicode_ci LIMIT 10",nativeQuery = true)
     Page<Customer> findAll(Pageable pageable);
 
-    Page<Customer> findAllByFullNameContaining(String name, Pageable pageable);
+
+    Page<Customer> findAllByFullNameContaining(String s, Pageable pageable);
+//    Page<Customer> findByFullNameOrAddress(String fullName, String address, Pageable pageable);
 
     @Query(value = "select ct.contract_date_end, c.* from customers c \n" +
             "inner join contracts ct\n" +

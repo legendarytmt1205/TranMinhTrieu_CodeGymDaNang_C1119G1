@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body {
+        background-image: url('image/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="contact-white">
+                <form id="general-information" class="input-group">
+                    <h3 id="general">General Information</h3>
+                    <input id="title-input" type="text" class="input-field" placeholder="Title" required>
+                    <div class="name">
+                        <input id="first-name-input" type="text" class="input-field-part" placeholder="First Name"
+                               required>
+                        <input id="last-name-input" type="text" class="input-field-part" placeholder="Last Name"
+                               required>
+                    </div>
+                    <input id="position-input" type="text" class="input-field" placeholder="Position" required>
+                    <input id="company-input" type="text" class="input-field" placeholder="Company" required>
+                    <div class="name">
+                        <input id="business-input" type="text" class="input-field-part" placeholder="Business Arena"
+                               required>
+                        <input id="employee-input" type="text" class="input-field-part" placeholder="Employees"
+                               required>
+                    </div>
+
+                 <div class="get-ajax"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="contact-purple">
+                <form id="contact-details" class="input-group">
+                    <h3>Contact Details</h3>
+                    <input id="color" type="text" class="input-field" placeholder="Street +Nt" required >
+                    <input id="color1" class="input-field" placeholder="Additional Information" required>
+                    <div class="name">
+                        <input id="color2" class="input-field-part" placeholder="Zip Code" required>
+                        <input id="color3" class="input-field-part" placeholder="Place" required>
+                    </div>
+                    <input id="color4" class="input-field" placeholder="Country" required>
+                    <div class="name">
+                        <input id="color5" class="input-field-part" placeholder="Code+" required>
+                        <input id="color6" class="input-field-part" placeholder="Phone Number" required>
+                    </div>
+                    <input id="color7" class="input-field" placeholder="Your Email" required>
+                    <input type="checkbox" class="check-box"> <span> I agree to the terms & conditions</span>
+                    <button id="open" type="button" class="button button2">Register</button>
+                    <button id="ajax" type="button" class="button button9">Button</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="nen-mo"></div>
+<div class="hop-thoai">
+    <h3>Information</h3>
+    <div class="show">
+        <div id="title-show"></div>
+        <div id="name-show"></div>
+        <div id="position-show"></div>
+        <div id="company-show"></div>
+        <div id="business-show"></div>
+        <div id="color-show"></div>
+        <div id="color1-show"></div>
+        <div id="color2-show"></div>
+        <div id="color3-show"></div>
+        <div id="color4-show"></div>
+        <div id="color5-show"></div>
+        <div id="color6-show"></div>
+        <div id="color7-show"></div>
+    </div>
+    <div class="noi-dung">
+        <button class="btn-close">Close</button>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/popup.js"></script>
+</body>
+</html>

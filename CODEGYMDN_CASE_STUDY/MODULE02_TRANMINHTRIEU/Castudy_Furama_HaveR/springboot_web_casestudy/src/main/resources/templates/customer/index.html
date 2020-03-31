@@ -20,7 +20,10 @@
         Add new customer
     </a>
 </p>
-<table id = "customers">
+<div th:if="${message}" class="alert alert-success" role="alert">
+    <p th:text="${message}"></p>
+</div>
+<table id="customers">
     <thead>
     <tr>
         <th>Full Name</th>

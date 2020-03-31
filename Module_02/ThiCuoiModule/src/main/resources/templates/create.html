@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<!--    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+<!--    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
+<!--    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
+
+<!--    <script>-->
+<!--        $(document).ready(-->
+<!--            function () {-->
+<!--                $("#datepicker").datepicker({-->
+<!--                    dateFormat: 'dd/mm/yy',-->
+<!--                    changeMonth: true,-->
+<!--                    changeYear: true-->
+<!--                });-->
+<!--            }-->
+<!--        );-->
+<!--    </script>-->
+</head>
+<body>
+<h2>Add Product</h2>
+<p>
+    <a th:href="@{/product}">
+        Back to product list
+    </a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<div id="form">
+    <form th:action="@{/product/create}" th:object="${product}"
+          method="POST">
+        <div>
+            <label>Name</label><br/>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>Type</label><br/>
+            <select th:field="*{type}">
+                <option value="phone">Telephone</option>
+                <option value="TV">TiVi</option>
+                <option value="AC">TuLanh</option>
+            </select>
+        </div>
+        <div>
+            <br/>
+            <label>Price</label><br/>
+            <input type="text" th:field="*{price}"/>
+        </div>
+        <div>
+            <label>Quantily</label><br/>
+            <input type="text" th:field="*{quantily}"/>
+        </div>
+        <div>
+            <label>Desc</label><br/>
+            <input type="text" th:field="*{desc}"/>
+        </div>
+        <div>
+            <label>Date</label><br/>
+            <input type="datetime-local" id="datepicker" th:field="*{create_day}"/>
+        </div>
+        <input type="submit" value="Save"></input>
+    </form>
+</div>
+<footer></footer>
+<!--<script>-->
+<!--    $('#datepicker').datepicker(-->
+<!--        {-->
+<!--            format: 'dd/mm/yyyy',-->
+<!--            uiLibrary: 'bootstrap4',-->
+<!--            autoclose: true,-->
+<!--            todayHighlight: true-->
+<!--        }-->
+<!--    );-->
+<!--</script>-->
+</body>
+</html>

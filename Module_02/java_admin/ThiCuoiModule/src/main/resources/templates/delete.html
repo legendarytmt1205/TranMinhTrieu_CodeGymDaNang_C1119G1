@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<h2>Delete Product</h2>
+<p>
+    <a th:href="@{/product}">
+        Back To Prodcut List
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/product/delete}" th:object="${product}"
+          method="POST" novalidate="novalidate">
+        <input th:type="hidden" name="id" th:field="*{id}">
+<!--        <div>-->
+<!--            <label>Name</label>-->
+<!--            <input type="text" th:field="*{name}"/>-->
+<!--        </div>-->
+<!--        <input type="submit" value="delete"></input>-->
+        <h3>Are you sure</h3>
+        <br/>
+        <input value="yes" name="confirm" type="submit"/>
+        <input value="no" name="confirm" type="submit"/>
+    </form>
+</div>
+<footer></footer>
+</body>
+</html>

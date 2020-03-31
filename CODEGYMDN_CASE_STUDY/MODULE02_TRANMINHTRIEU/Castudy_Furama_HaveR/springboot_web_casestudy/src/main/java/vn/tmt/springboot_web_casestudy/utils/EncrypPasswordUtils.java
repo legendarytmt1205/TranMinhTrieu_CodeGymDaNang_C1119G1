@@ -9,6 +9,6 @@ public class EncrypPasswordUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println("pass 123456 ma hoa thanh : " + EncrypPasswordUtils("123"));
+        System.out.println("pass 123 ma hoa thanh : " + EncrypPasswordUtils("123"));
     }
 }

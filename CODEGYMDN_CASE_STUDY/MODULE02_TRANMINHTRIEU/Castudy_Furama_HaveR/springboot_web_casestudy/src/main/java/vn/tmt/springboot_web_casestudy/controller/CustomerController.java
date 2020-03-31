@@ -45,10 +45,9 @@ public class CustomerController {
                                        @RequestParam(name = "name") Optional<String> name, Model model) {
         Page<Customer> customerList;
         pageable = PageRequest.of(pageable.getPageNumber(), 8, Sort.by("fullName").descending());
-        ///pageable = PageRequest.of(pageable.getPageNumber(), 8);
 
         if (name.isPresent()) {
-            customerList = customerService.findAllByNameContaining(name.get(), pageable);
+            customerList = customerService.findAllByFullNameContaining(name.get(), pageable);
             model.addAttribute("name", name.get());
         } else {
             customerList = customerService.getAllCustomers(pageable);
@@ -65,16 +64,17 @@ public class CustomerController {
     }
 
     @PostMapping("admin/customer/create")
-    public ModelAndView createBlog(@Validated @ModelAttribute(name = "customer") Customer customer, BindingResult bindingResult) {
+    public String createBlog(@Validated @ModelAttribute(name = "customer") Customer customer, BindingResult bindingResult,RedirectAttributes redirect) {
         new Customer().validate(customer, bindingResult);
         if (bindingResult.hasErrors()) {
-            return new ModelAndView("customer/create");
+            return "customer/create";
         } else {
             customerService.saveCustomer(customer);
-            ModelAndView modelAndView = new ModelAndView("customer/create");
-            modelAndView.addObject("customer", new Customer());
-            modelAndView.addObject("message", "New customer created successfully");
-            return modelAndView;
+            ///ModelAndView modelAndView = new ModelAndView("customer/index");
+//            modelAndView.addObject("customer", new Customer());
+            //modelAndView.addObject("message", "New customer created successfully");
+            redirect.addFlashAttribute("message", "New customer created successfully");
+            return "redirect:/admin/customer";
         }
     }
 
