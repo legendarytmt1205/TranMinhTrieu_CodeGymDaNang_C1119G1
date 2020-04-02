@@ -1,0 +1,49 @@
+
+td, th {
+    text-align: left;
+    padding: 15px;
+
+}
+
+#sign{
+    margin-right: 5px;
+}
+#name{
+    font-size: 15px;
+}
+.cot-1{
+    width: 25%;
+    color: #909090;
+    font-weight: bolder;
+}
+.edit{
+    text-align: right;
+}
+.anhthe{
+    border-radius: 25px;
+}
+#meeting{
+    margin-left:30px;
+    margin-right: 5px;
+}
+#basic{
+    margin-right: 5px;
+}
+#time-zone{
+    margin-left: 47px;
+}
+#date-format{
+    margin-left: 40px;
+}
+#time-format{
+    margin-left: 38px;
+}
+#example{
+    margin-left: 50px;
+}
+#change{
+    margin-right: 40px;
+}
+#upgrade{
+    margin-left: 10px;
+}

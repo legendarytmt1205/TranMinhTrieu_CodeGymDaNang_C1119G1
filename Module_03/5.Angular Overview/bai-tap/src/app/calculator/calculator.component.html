@@ -1,0 +1,14 @@
+<p>calculator works!</p>
+<div>
+  <input type="number" [value]="first" (change)="updateNumber1($event.target.value)">
+  <select [value]="operrator" (change)="onSelectChange($event.target.value)">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" [value]="last" (change)="updateNumber2($event.target.value)">
+  <button (click)="calculator()">thuc thi</button>
+  <h3>{{uotput}}</h3>
+</div>
+

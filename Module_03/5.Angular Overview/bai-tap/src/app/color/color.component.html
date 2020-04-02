@@ -1,0 +1,8 @@
+<p>color-picker works!</p>
+<div>
+  <label>Chọn màu:</label>
+  <input hidden [value]="color" type="color" (change)="onChange1($event.target.value)">
+</div>
+
+<p>Output:</p>
+<div class="color-preview" [style.boder]="color"></div>

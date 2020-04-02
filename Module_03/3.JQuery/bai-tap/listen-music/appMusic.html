@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binz</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+<div class="bg">
+    <img class="poster" src="binz1.png">
+</div>
+<div class="after control alert alert-dark col-md-12 row">
+    <p .text-dark id="title2"></p>
+</div>
+<div>
+    <div class="col-md-4 img">
+        <img class="poster" src="binz1.png">
+    </div>
+    <div class="control alert alert-dark col-md-4 row" role="alert">
+        <button onclick="previous()"><img src="pre.svg" style="height: 50px; width: 50px"></button>
+        <button id="play" onclick="playOrPause()"><img src="pause.svg " style="height: 50px; width: 50px"></button>
+        <button onclick="next()"><img src="next.svg" style="height: 50px; width: 50px"></button>
+        <div style="position: relative; left: 100px">
+            <p .text-dark id="title"></p><br>
+            <p .text-dark id="title1"></p>
+            <i class="fas fa-music"></i>
+        </div>
+    </div>
+
+</div>
+<script>
+    let songs = ["CryingOverYou.mp3", "DieuBiMat.mp3", "RoiXa.mp3", "AnhThanhNien.mp3"];
+    let poster = ["binz1.png", "binz.jpg", "binz2.jpg","binz.jpg"];
+    let singer = ["DanTruong","Lamtruong","BangKieu","TruongVu"]
+    let title = document.getElementById("title");
+    let title1 = document.getElementById("title1");
+    let title2 = document.getElementById("title2");
+    let song = new Audio();
+    let currentSong = 0;
+
+    window.onload = playSong;
+    // for (let i=0;i<=songs.length;i++){
+    //     var splitted = songs[i].split(".mp3");
+    //    songs += songs[i].split(".mp3");
+    //     songs += splitted
+    // }
+    title2.textContent = songs;
+    function playSong() {
+        // song = songs[currentSong];
+        song.src = songs[currentSong];
+        title.textContent = songs[currentSong];
+        title1.textContent = singer[currentSong];
+        const playPromise = song.play();
+        if (playPromise !== null) {
+            playPromise.catch(() => {
+                song.play()
+            })
+        }
+    }
+
+    function playOrPause() {
+        if (song.paused) {
+            song.play();
+            $("#play img").attr("src", "pause.svg");
+        } else {
+            song.pause();
+            $("#play img").attr("src", "play.svg");
+        }
+    }
+
+    function next() {
+        currentSong++;
+        if (currentSong > 3) {
+            currentSong = 0;
+        }
+
+        playSong();
+        $("#play img").attr("src", "pause.svg");
+        $(".poster").attr("src", poster[currentSong]);
+    }
+
+    function previous() {
+        currentSong--;
+        if (currentSong < 0) {
+            currentSong = 3;
+        }
+
+        playSong();
+        $("#play img").attr("src", "pause.svg");
+        $(".poster").attr("src", poster[currentSong]);
+    }
+</script>
+</body>
+</html>
