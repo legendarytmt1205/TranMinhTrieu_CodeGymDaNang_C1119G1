@@ -17,5 +17,4 @@ export class UserComponent implements OnInit {
   onButtonClicked() {
     this.name = 'Nguyen';
   }
-
 }

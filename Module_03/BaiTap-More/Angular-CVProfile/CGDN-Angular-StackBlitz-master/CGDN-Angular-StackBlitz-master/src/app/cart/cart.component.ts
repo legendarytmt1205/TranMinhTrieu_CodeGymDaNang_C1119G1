@@ -32,6 +32,4 @@ export class CartComponent {
         this.checkoutFrom.reset();
 
     }
-
-
 }
