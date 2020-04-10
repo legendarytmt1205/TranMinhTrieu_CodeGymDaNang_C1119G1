@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ImgSliderComponent } from './img-slider/img-slider.component';
+import { TodoComponent } from './todo/todo.component';
 
 
 
 const routes: Routes = [
-  { path: "img-slider", component: ImgSliderComponent },
+  { path: "todo", component: TodoComponent },
 ];
 
 @NgModule({

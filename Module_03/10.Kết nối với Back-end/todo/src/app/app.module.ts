@@ -4,16 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ImgSliderComponent } from './img-slider/img-slider.component';
+import { TodoComponent } from './todo/todo.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    ImgSliderComponent
+   TodoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
