@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "casestudymd3"
+  },
+  "targets": {
+    "casestudymd3": {
+      "hosting": {
+        "CaseStudyMD3": [
+          "casestudymd3"
+        ]
+      }
+    }
+  }
+}

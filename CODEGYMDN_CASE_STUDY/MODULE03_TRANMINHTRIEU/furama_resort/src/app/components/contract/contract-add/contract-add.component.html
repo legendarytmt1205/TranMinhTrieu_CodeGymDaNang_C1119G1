@@ -1,0 +1,78 @@
+<h3 class="text-center">Thêm mới hợp đồng</h3>
+
+<form class="w-75 mx-auto mt-3" [formGroup]="formAddNewContract">
+    <div class="form-group">
+        <p>Mã Nhân Viên</p>
+        <input type="text" class="form-control" formControlName="NVcode">
+        <p *ngIf="formAddNewContract.controls.NVcode.errors?.required 
+        && formAddNewContract.controls.NVcode.touched" class="text-danger">Vui lòng nhập mã nhân viên</p>
+        <p *ngIf="formAddNewContract.controls.NVcode.errors?.pattern 
+        && formAddNewContract.controls.NVcode.touched" class="text-danger">Mã nhân viên không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Mã Khách Hàng</p>
+        <input type="text" class="form-control" formControlName="KHcode">
+        <p *ngIf="formAddNewContract.controls.KHcode.errors?.required 
+        && formAddNewContract.controls.KHcode.touched" class="text-danger">Vui lòng nhập mã khách hàng</p>
+        <p *ngIf="formAddNewContract.controls.KHcode.errors?.pattern 
+        && formAddNewContract.controls.KHcode.touched" class="text-danger">Mã khách hàng không đúng định dạng</p>
+    </div>
+ 
+    <div class="form-group">
+        <p>Mã Dịch Vụ</p>
+        <input type="text" class="form-control"formControlName="DVcode">
+        <p *ngIf="formAddNewContract.controls.DVcode.errors?.required && 
+        formAddNewContract.controls.DVcode.touched" class="text-danger">Vui lòng nhập mã dịch vụ</p>
+        <p *ngIf="formAddNewContract.controls.DVcode.errors?.pattern &&
+        formAddNewContract.controls.DVcode.touched" class="text-danger">Mã dịch vụ không đúng định dạng</p>
+    </div>
+    
+    <div class="form-group">
+        <mat-form-field>
+            <input class="form-control"formControlName="startDate"
+             matInput [matDatepicker]="picker" placeholder="Ngày bắt đầu hợp đồng">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker startView="year" ></mat-datepicker>
+          </mat-form-field>
+        <p *ngIf="formAddNewContract.controls.startDate.errors?.required && formAddNewContract.controls.startDate.touched" 
+        class="text-danger">Vui lòng chọn ngày bắt đầu hợp đồng</p>
+
+        
+        </div>
+    <div class="form-group">
+        <mat-form-field>
+            <input class="form-control"formControlName="endDate"
+             matInput [matDatepicker]="picker1" placeholder="Ngày kết thúc hợp đồng">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1 startView="year" ></mat-datepicker>
+          </mat-form-field>
+        <p *ngIf="formAddNewContract.controls.endDate.errors?.required && formAddNewContract.controls.endDate.touched" 
+        class="text-danger">Vui lòng chọn ngày kết thúc hợp đồng</p>
+    </div>
+
+    <div class="form-group">
+        <p>Tiền cọc</p>
+        <input type="text" class="form-control"formControlName="deposit">
+        <p *ngIf="formAddNewContract.controls.deposit.errors?.required 
+        && formAddNewContract.controls.deposit.touched" 
+        class="text-danger">Vui lòng nhập tiền cọc</p>
+        <p *ngIf="formAddNewContract.controls.deposit.errors?.pattern 
+        && formAddNewContract.controls.deposit.touched" 
+        class="text-danger">Tiền cọc không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Tổng Tiền</p>
+        <input type="text" class="form-control"formControlName="total">
+        <p *ngIf="formAddNewContract.controls.total.errors?.required 
+        && formAddNewContract.controls.total.touched" 
+        class="text-danger">Vui lòng nhập số tổng tiền/p>
+        <p *ngIf="formAddNewContract.controls.total.errors?.pattern 
+        && formAddNewContract.controls.total.touched" 
+        class="text-danger">tổng tiền không đúng định dạng</p>
+    </div>
+ 
+    <div class="form-group d-flex justify-content-center">
+        <button [disabled]="formAddNewContract.invalid" class="btn btn-success mt-3" (click)="addNewContract()">Thêm mới</button>
+    </div>
+
+</form>

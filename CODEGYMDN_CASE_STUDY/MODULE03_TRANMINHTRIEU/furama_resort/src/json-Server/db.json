@@ -1,0 +1,508 @@
+{
+  "employees": [
+    {
+      "fullName": "Lê Đình Quốc",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "1993-11-25T17:00:00.000Z",
+      "IDnumber": "201647394",
+      "salary": "32",
+      "email": "elvisle93@gmail.com",
+      "phone": "0901123321",
+      "address": "abc",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "fullName": "Nguyễn Phú Quý",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "201647394",
+      "salary": "900 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Nam Ô - Đà Nẵng"
+    },
+    {
+      "id": 3,
+      "fullName": "Nguyễn Duy Vũ",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "201647394",
+      "salary": "100 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 4,
+      "fullName": "Lê Ngọc Huy",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1998",
+      "IDnumber": "201647394",
+      "salary": "200 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 5,
+      "fullName": "Nguyễn Hữu Hiền",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1999",
+      "IDnumber": "201647394",
+      "salary": "1 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 6,
+      "fullName": "Nguyễn Hồng Sơn",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/2000",
+      "IDnumber": "201647394",
+      "salary": "100 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 7,
+      "fullName": "Nguyễn Kim Quốc Việt",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "201647394",
+      "salary": "100 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 8,
+      "fullName": "Trần Minh Triều",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "201647394",
+      "salary": "100 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 9,
+      "fullName": "Bùi Đức Hoàng ",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "201647394",
+      "salary": "100 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 10,
+      "fullName": "Trần Anh Tuấn",
+      "position": "Nhân Viên",
+      "academicLevel": "Đại Học",
+      "part": "Kinh Doanh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "201647394",
+      "salary": "100 củ",
+      "email": "elvisle93@gmail.com",
+      "phone": "0985634701",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "fullName": "Lê Đình Trí",
+      "position": "Nhân viên",
+      "academicLevel": "Đại Học",
+      "part": "Lễ Tân",
+      "dateOfBirth": "1989-03-22",
+      "identityNumber": "220113112",
+      "salary": "9000 củ",
+      "email": "abc@gmail.com",
+      "phoneNumber": "0987445441",
+      "address": "Thanh Khê - Đà Nẵng",
+      "id": 11
+    },
+    {
+      "fullName": "Lê Đình Tấn",
+      "position": "",
+      "academicLevel": "",
+      "part": "",
+      "dateOfBirth": "",
+      "identityNumber": "222222222",
+      "salary": "",
+      "email": "",
+      "phoneNumber": "0912321123",
+      "address": "",
+      "id": 12
+    },
+    {
+      "fullName": "Trần Anh Trung",
+      "position": "",
+      "academicLevel": "",
+      "part": "",
+      "dateOfBirth": "",
+      "IDnumber": "221331331",
+      "salary": "",
+      "email": "",
+      "phone": "0909112112",
+      "address": "",
+      "id": 13
+    },
+    {
+      "fullName": "Kiến Đen 00711112222222",
+      "position": "Developer fullstack",
+      "academicLevel": "1/12",
+      "part": "Bộ phận nào cũng chơi đc",
+      "dateOfBirth": "2020-04-16",
+      "IDnumber": "201113446",
+      "salary": "10000000",
+      "email": "kienden007@gmail.com",
+      "phone": "0901224449",
+      "address": "Nam Ô - Đà Nẵng",
+      "id": 15
+    },
+    {
+      "fullName": "abvdasdasdadasd",
+      "position": "a",
+      "academicLevel": "a",
+      "part": "a",
+      "dateOfBirth": "2020-12-30T17:00:00.000Z",
+      "IDnumber": "123123123",
+      "salary": "123123123",
+      "email": "a@gmail.com",
+      "phone": "0912321123",
+      "address": "a",
+      "id": 16
+    },
+    {
+      "fullName": "Nguyễn Tấn Dũng",
+      "position": "Thủ Tướng ",
+      "academicLevel": "Tiến Sĩ",
+      "part": "Bộ chính trị",
+      "dateOfBirth": "1967-06-29T17:00:00.000Z",
+      "IDnumber": "123321123",
+      "salary": "9000000000",
+      "email": "dung123@gmail.com",
+      "phone": "0911222333",
+      "address": "Tiền Giang",
+      "id": 17
+    },
+    {
+      "fullName": "a",
+      "position": "a",
+      "academicLevel": "a",
+      "part": "a",
+      "dateOfBirth": "2017-12-29T17:00:00.000Z",
+      "IDnumber": "123123123",
+      "salary": "1",
+      "email": "a@gmail.com",
+      "phone": "0912123321",
+      "address": "a",
+      "id": 18
+    }
+  ],
+  "customers": [
+    {
+      "fullName": "Trần Minh Triều",
+      "code": "KH-0001",
+      "dateOfBirth": "1991-02-27T17:00:00.000Z",
+      "IDnumber": "221331331",
+      "email": "tmt1991@gmail.com",
+      "phone": "0901224449",
+      "address": "Ngũ Hành Sơn - Đà Nẵng",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "code": "KH-0002",
+      "fullName": "Nguyễn Phú Trọng",
+      "dateOfBirth": "01/06/1919",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 3,
+      "code": "KH-0003",
+      "fullName": "Phạm Bình Minh",
+      "dateOfBirth": "01/06/1949",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 4,
+      "code": "KH-0004",
+      "fullName": "Phạm Tiến Dũng",
+      "dateOfBirth": "01/06/1999",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 5,
+      "code": "KH-0005",
+      "fullName": "Nguyễn Bá Cảnh",
+      "dateOfBirth": "01/06/1987",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 6,
+      "code": "KH-0006",
+      "fullName": "Trần Trọng Kim",
+      "dateOfBirth": "01/06/1958",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 7,
+      "code": "KH-0007",
+      "fullName": "Bùi Tấn Trường",
+      "dateOfBirth": "01/06/1989",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 8,
+      "code": "KH-0008",
+      "fullName": "Nguyễn Quang Hải",
+      "dateOfBirth": "01/06/2000",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 9,
+      "code": "KH-0009",
+      "fullName": "Nguyễn Tuấn Anh",
+      "dateOfBirth": "01/06/1996",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    },
+    {
+      "id": 10,
+      "code": "KH-0010",
+      "fullName": "Đặng Văn Lâm",
+      "dateOfBirth": "01/06/1995",
+      "IDnumber": "221331331",
+      "phone": "0901224449",
+      "email": "tmt1991@gmail.com",
+      "address": "Ngũ Hành Sơn - Đà Nẵng"
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "Villa 01",
+      "code": "DV-0001",
+      "area": 100,
+      "numberOfFloors": 1,
+      "maximumNumberOfPeople": 3,
+      "rentalCosts": 3,
+      "rentalTypeCode": "100000000000",
+      "status": "Còn Phòng",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "serviceName": "Villa 02",
+      "code": "DV-0002",
+      "area": 300,
+      "numberOfFloors": 6,
+      "maximumNumberOfPeople": 30,
+      "rentalCosts": 3,
+      "rentalTypeCode": 2,
+      "status": "Còn Phòng"
+    },
+    {
+      "id": 3,
+      "serviceName": "Room 01",
+      "code": "DV-0003",
+      "area": 20,
+      "numberOfFloors": 1,
+      "maximumNumberOfPeople": 5,
+      "rentalCosts": 7,
+      "rentalTypeCode": 15,
+      "status": "Hết Phòng"
+    },
+    {
+      "id": 4,
+      "serviceName": "House 01",
+      "code": "DV-0004",
+      "area": 100,
+      "numberOfFloors": 5,
+      "maximumNumberOfPeople": 20,
+      "rentalCosts": 25,
+      "rentalTypeCode": 3,
+      "status": "Còn Phòng"
+    },
+    {
+      "id": 5,
+      "serviceName": "Villa 02",
+      "code": "DV-0005",
+      "area": 250,
+      "numberOfFloors": 3,
+      "maximumNumberOfPeople": 13,
+      "rentalCosts": 32,
+      "rentalTypeCode": 7,
+      "status": "Hết Phòng"
+    },
+    {
+      "id": 6,
+      "serviceName": "Room 02",
+      "code": "DV-0006",
+      "area": 27,
+      "numberOfFloors": 3,
+      "maximumNumberOfPeople": 10,
+      "rentalCosts": 30,
+      "rentalTypeCode": 18,
+      "status": "Còn Phòng"
+    },
+    {
+      "serviceName": "1",
+      "code": "DV-3211",
+      "area": "1",
+      "numberOfFloors": "1",
+      "maximumNumberOfPeople": "1",
+      "rentalCosts": "1",
+      "rentalTypeCode": "1",
+      "status": "a",
+      "id": 8
+    }
+  ],
+  "contracts": [
+    {
+      "NVcode": "NV-0001",
+      "KHcode": "KH-0001",
+      "DVcode": "DV-0001",
+      "startDate": "2011-06-21T17:00:00.000Z",
+      "endDate": "2012-11-21T17:00:00.000Z",
+      "deposit": 13,
+      "total": 29,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "NVcode": "NV-0002",
+      "KHcode": "KH-0002",
+      "DVcode": "DV-0002",
+      "startDate": "01/06/1995",
+      "endDate": "01/06/1995",
+      "deposit": 20,
+      "total": 35
+    },
+    {
+      "id": 3,
+      "NVcode": "NV-0003",
+      "KHcode": "KH-0003",
+      "DVcode": "DV-0003",
+      "startDate": "01/06/1995",
+      "endDate": "01/06/1995",
+      "deposit": 35,
+      "total": 50
+    },
+    {
+      "id": 4,
+      "NVcode": "NV-0004",
+      "KHcode": "KH-0004",
+      "DVcode": "DV-0004",
+      "startDate": "01/06/1995",
+      "endDate": "01/06/1995",
+      "deposit": 21,
+      "total": 40
+    },
+    {
+      "id": 5,
+      "NVcode": "NV-0005",
+      "KHcode": "KH-0005",
+      "DVcode": "DV-0005",
+      "startDate": "01/06/1995",
+      "endDate": "01/06/1995",
+      "deposit": 18,
+      "total": 38
+    },
+    {
+      "id": 6,
+      "NVcode": "NV-0006",
+      "KHcode": "KH-0006",
+      "DVcode": "DV-0006",
+      "startDate": "01/06/1995",
+      "endDate": "01/06/1995",
+      "deposit": 28,
+      "total": 48
+    },
+    {
+      "NVcode": "NV-0011",
+      "KHcode": "KH-0012",
+      "DVcode": "DV-0012",
+      "startDate": "2020-01-03T17:00:00.000Z",
+      "endDate": "2020-04-08T17:00:00.000Z",
+      "deposit": "1",
+      "total": "123",
+      "id": 7
+    },
+    {
+      "NVcode": "NV-0012",
+      "KHcode": "KH-0013",
+      "DVcode": "DV-0014",
+      "startDate": "2020-12-30T17:00:00.000Z",
+      "endDate": "2020-12-30T17:00:00.000Z",
+      "deposit": "123",
+      "total": "1231313132",
+      "id": 8
+    }
+  ],
+  "contractDetail": [
+    {
+      "HDcode": "HD-1233",
+      "DVcode": "DV-1234",
+      "amount": "101",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "HDcode": "2",
+      "DVcode": "3",
+      "amount": "103"
+    },
+    {
+      "HDcode": "HD-1112",
+      "DVcode": "DV-1113",
+      "amount": "123",
+      "id": 5
+    }
+  ]
+}

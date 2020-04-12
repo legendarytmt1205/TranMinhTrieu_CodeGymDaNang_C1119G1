@@ -1,0 +1,69 @@
+<h3 class="text-center">Chỉnh sửa thông tin dịch vụ</h3>
+
+<form class="w-75 mx-auto mt-3" [formGroup]="formEditService">
+    <div class="form-group">
+        <p>Tên dịch vụ</p>
+        <input type="text" class="form-control" formControlName="serviceName">
+        <p *ngIf="formEditService.controls.serviceName.errors?.required && formEditService.controls.serviceName.touched" class="text-danger">Vui lòng nhập tên dịch vụ</p>
+    </div>
+    <div class="form-group">
+        <p>Mã Dịch Vụ</p>
+        <input type="text" class="form-control"formControlName="code">
+        <p *ngIf="formEditService.controls.code.errors?.required && 
+        formEditService.controls.code.touched" class="text-danger">Vui lòng nhập mã dịch vụ</p>
+        <p *ngIf="formEditService.controls.code.errors?.pattern &&
+        formEditService.controls.code.touched" class="text-danger">Mã dịch vụ không đúng định dạng</p>
+    </div>
+  
+    <div class="form-group">
+        <p>Diện Tích</p>
+        <input type="text" class="form-control"formControlName="area">
+        <p *ngIf="formEditService.controls.area.errors?.required && formEditService.controls.area.touched" 
+        class="text-danger">Vui lòng nhập diện tích</p>
+        <p *ngIf="formEditService.controls.area.errors?.pattern && formEditService.controls.area.touched" 
+        class="text-danger">Diện tích không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Số Tầng</p>
+        <input type="text" class="form-control"formControlName="numberOfFloors">
+        <p *ngIf="formEditService.controls.numberOfFloors.errors?.required && formEditService.controls.numberOfFloors.touched" 
+        class="text-danger">Vui lòng nhập số tầng</p>
+        <p *ngIf="formEditService.controls.numberOfFloors.errors?.pattern && formEditService.controls.numberOfFloors.touched" 
+        class="text-danger">Số tầng không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Số Người</p>
+        <input type="text" class="form-control"formControlName="maximumNumberOfPeople">
+        <p *ngIf="formEditService.controls.maximumNumberOfPeople.errors?.required && formEditService.controls.maximumNumberOfPeople.touched" 
+        class="text-danger">Vui lòng nhập số người</p>
+        <p *ngIf="formEditService.controls.maximumNumberOfPeople.errors?.pattern && formEditService.controls.maximumNumberOfPeople.touched" 
+        class="text-danger">Số người không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Giá thuê</p>
+        <input type="text" class="form-control"formControlName="rentalCosts">
+        <p *ngIf="formEditService.controls.rentalCosts.errors?.required && formEditService.controls.rentalCosts.touched" 
+        class="text-danger">Vui lòng nhập giá thuê</p>
+        <p *ngIf="formEditService.controls.rentalCosts.errors?.pattern && formEditService.controls.rentalCosts.touched" 
+        class="text-danger">Giá thuê không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Kiểu thuê</p>
+        <input type="text" class="form-control"formControlName="rentalTypeCode">
+        <p *ngIf="formEditService.controls.rentalTypeCode.errors?.required && formEditService.controls.rentalTypeCode.touched" 
+        class="text-danger">Vui lòng nhập kiểu thuê</p>
+        <p *ngIf="formEditService.controls.rentalTypeCode.errors?.pattern && formEditService.controls.rentalTypeCode.touched" 
+        class="text-danger">Kiểu thuê không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Trạng thái</p>
+        <input type="text" class="form-control"formControlName="status">
+        <p *ngIf="formEditService.controls.status.errors?.required && formEditService.controls.status.touched" 
+        class="text-danger">Vui lòng nhập trạng thái</p>
+    </div>
+
+    <div class="form-group d-flex justify-content-center">
+        <button [disabled]="formEditService.invalid" class="btn btn-success mt-3" (click)="editService()">Lưu</button>
+    </div>
+
+</form>

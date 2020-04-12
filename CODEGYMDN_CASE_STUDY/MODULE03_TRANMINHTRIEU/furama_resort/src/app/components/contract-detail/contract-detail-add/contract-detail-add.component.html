@@ -1,0 +1,34 @@
+<h3 class="text-center">Thêm mới hợp đồng chi tiết</h3>
+
+<form class="w-75 mx-auto mt-3" [formGroup]="formAddNewContractDetails">
+    <div class="form-group">
+        <p>Mã Hợp Đồng</p>
+        <input type="text" class="form-control" formControlName="HDcode">
+        <p *ngIf="formAddNewContractDetails.controls.HDcode.errors?.required && 
+        formAddNewContractDetails.controls.HDcode.touched" class="text-danger">Vui lòng nhập mã hợp đồng</p>
+        <p *ngIf="formAddNewContractDetails.controls.HDcode.errors?.pattern &&
+        formAddNewContractDetails.controls.HDcode.touched" class="text-danger">Mã hợp đồng không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Mã Dịch Vụ</p>
+        <input type="text" class="form-control"formControlName="DVcode">
+        <p *ngIf="formAddNewContractDetails.controls.DVcode.errors?.required && 
+        formAddNewContractDetails.controls.DVcode.touched" class="text-danger">Vui lòng nhập mã dịch vụ</p>
+        <p *ngIf="formAddNewContractDetails.controls.DVcode.errors?.pattern &&
+        formAddNewContractDetails.controls.DVcode.touched" class="text-danger">Mã dịch vụ không đúng định dạng</p>
+    </div>
+    <div class="form-group">
+        <p>Số Lượng</p>
+        <input type="text" class="form-control"formControlName="amount">
+        <p *ngIf="formAddNewContractDetails.controls.amount.errors?.required && 
+        formAddNewContractDetails.controls.amount.touched" class="text-danger">Vui lòng nhập số lượng</p>
+        <p *ngIf="formAddNewContractDetails.controls.amount.errors?.pattern &&
+        formAddNewContractDetails.controls.amount.touched" class="text-danger">Mã số lượng không đúng định dạng</p>
+    </div>
+    
+    
+    <div class="form-group d-flex justify-content-center">
+        <button [disabled]="formAddNewContractDetails.invalid" class="btn btn-success mt-3" (click)="addNewContractDetail()">Thêm mới</button>
+    </div>
+
+</form>
